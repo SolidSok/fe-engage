@@ -17,6 +17,7 @@ function App() {
           <Route path="emblems" element={<EmblemInfo />} />
           <Route path="weapons&items" element={<WeaponsAndItems />} />
           <Route path="misc" element={<Misc />} />
+          <Route path="*" element={<NavBar />} />
         </Route>
       </Routes>
     </BrowserRouter>

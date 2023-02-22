@@ -1,5 +1,12 @@
 import React from 'react';
+import { Link, Outlet } from 'react-router-dom';
 
-export default function NavBar() {
-  return <div>NavBar</div>;
+export default function Navbar() {
+  return (
+    <>
+      {' '}
+      <nav className="navbar"></nav>
+      <Outlet />
+    </>
+  );
 }
