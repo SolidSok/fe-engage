@@ -6,9 +6,11 @@ import ClassInfo from './components/classInfo/classInfo';
 import EmblemInfo from './components/emblemInfo/emblemInfo';
 import WeaponsAndItems from './components/weaponsAndItems/weaponsAndItems';
 import Misc from './components/misc/misc';
+import UnitInfo from './components/unitInfo/unitInfo';
 function App() {
   return (
-    <EmblemInfo />
+    // <EmblemInfo />
+    <UnitInfo />
     // <BrowserRouter className="app">
     //   <Routes>
     //     <Route path="/" element={<NavBar />}>

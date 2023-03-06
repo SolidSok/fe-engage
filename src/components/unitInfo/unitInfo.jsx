@@ -1,23 +1,17 @@
 import React from 'react';
 
+import UnitCard from './unitCard';
+import unitData from './unitData';
 export default function UnitInfo() {
+  const unit = unitData;
   return (
     <div>
-      UnitInfo
-      <ul>
-        <li>
-          <a>Recruitment</a>
-        </li>
-        <li>
-          <a>Base Stats</a>
-        </li>
-        <li>
-          <a>Growth Rates</a>
-        </li>
-        <li>
-          <a>Personal Skills</a>
-        </li>
-      </ul>
+      <h1>Units</h1>
+      <div className="unit-page">
+        {unit.map(unit => (
+          <UnitCard unit={unit} key={unit.name} />
+        ))}
+      </div>
     </div>
   );
 }

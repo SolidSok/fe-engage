@@ -1,0 +1,127 @@
+// creating data here instead of pulling from a database for more efficiency
+const emblemData = [
+  {
+    name: 'Marth',
+    image: 'src/assets/emblems/emblem_marth.png',
+    title: 'Beginnings',
+    stats: 'STR, DEX, SPD',
+    skills: [
+      {
+        name: 'Perceptive',
+        bondRank: '1',
+        description:
+          'If unit initiates combat, grants Avo+15. Avo increases with high speed(+1Avo for every 4 Spd)',
+        type: 'Sync Skill, inheritable',
+        sp: '500',
+      },
+      { name: 'Avoid+', bondRank: '', description: '', type: '', sp: '' },
+      { name: 'Divine Speed', bondRank: '', description: '', type: '', sp: '' },
+      {
+        name: 'LodeStar Rush',
+        bondRank: '',
+        description: '',
+        type: '',
+        sp: '',
+      },
+      { name: 'Rapier', bondRank: '', description: '', type: '', sp: '' },
+      {
+        name: 'Sword Agility',
+        bondRank: '',
+        description: '',
+        type: '',
+        sp: '',
+      },
+      {
+        name: 'Break Defenses',
+        bondRank: '',
+        description: '',
+        type: '',
+        sp: '',
+      },
+      { name: 'Unyielding', bondRank: '', description: '', type: '', sp: '' },
+      { name: 'Sword Prof', bondRank: '', description: '', type: '', sp: '' },
+      { name: 'Mercurius', bondRank: '', description: '', type: '', sp: '' },
+      { name: 'Falchion', bondRank: '', description: '', type: '', sp: '' },
+    ],
+  },
+  {
+    name: 'Celica',
+    image: 'src/assets/emblems/emblem_celica.png',
+    title: 'Echoes',
+    stats: 'STR, MAG, SPD',
+    skills: [{ name: '', bondRank: '', description: '', type: '', sp: '' }],
+  },
+  {
+    name: 'Sigurd',
+    image: 'src/assets/emblems/emblem_sigurd.png',
+
+    title: 'the Holy War',
+    stats: 'DEX, DEF, BLD, SPD',
+    skills: [],
+  },
+  {
+    name: 'Leif',
+    image: 'src/assets/emblems/emblem_leif.png',
+    title: 'Genealogy',
+    stats: 'HP, DEF, BLD',
+    skills: [],
+  },
+  {
+    name: 'Roy',
+    image: 'src/assets/emblems/emblem_roy.png',
+    title: 'Binding',
+    stats: 'HP, STR, RES',
+    skills: [],
+  },
+  {
+    name: 'Lyn',
+    image: 'src/assets/emblems/emblem_lyn.png',
+    title: 'Blazing',
+    stats: 'DEX, SPD, RES',
+    skills: [],
+  },
+  {
+    name: 'Eirika',
+    image: 'src/assets/emblems/emblem_eirika.png',
+    title: 'the Sacred',
+    stats: 'MAG, DEX, LCK',
+    skills: [],
+  },
+  {
+    name: 'Ike',
+    image: 'src/assets/emblems/emblem_ike.png',
+    title: 'Radiance',
+    stats: 'HP, STR, DEF',
+    skills: [],
+  },
+  {
+    name: 'Micaiah',
+    image: 'src/assets/emblems/emblem_micaiah.png',
+    title: 'Dawn',
+    stats: 'MAG, RES, LCK',
+    skills: [],
+  },
+  {
+    name: 'Lucina',
+    image: 'src/assets/emblems/emblem_lucina.png',
+    title: 'Awakening',
+    stats: 'DEX, SPD, LCK',
+    skills: [],
+  },
+  {
+    name: 'Corrin',
+    image: 'src/assets/emblems/emblem_corrin.png',
+    title: 'Fates',
+    stats: 'HP, MAG, RES',
+    skills: [],
+  },
+  {
+    name: 'Byleth',
+    image: 'src/assets/emblems/emblem_byleth.png',
+    title: 'the Academy',
+    stats: 'MAG, SPD, LCK',
+    skills: [],
+  },
+];
+
+export default emblemData;
