@@ -46,14 +46,13 @@
   color: #888;
 }
 
-.emblem-page,
-.unit-page {
+.page {
   display: flex;
   flex-wrap: wrap;
 }
 .card-image,
 .subtitle {
   width: 200px;
-  height: 200px;
+  /* height: 200px; */
   object-fit: contain;
 }

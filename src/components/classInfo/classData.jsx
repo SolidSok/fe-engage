@@ -1,8 +1,8 @@
 const classData = [
   {
     name: 'Dragon Child',
-    skill: 'none',
-    weapons: [{ name: 'sword', rank: 'B' }],
+    skill: null,
+    weapons: [{ name: 'Sword', rank: 'B' }],
     type: 'Dragon',
     weakness: 'Dragon',
     growths: {
@@ -24,8 +24,8 @@ const classData = [
       description: "Unit's engage meter is shortened one step.",
     },
     weapons: [
-      { name: 'sword', rank: 'A' },
-      { name: 'arts', rank: 'B' },
+      { name: 'Sword', rank: 'A' },
+      { name: 'Arts', rank: 'B' },
     ],
     type: 'Dragon',
     weakness: 'Dragon',
@@ -49,8 +49,8 @@ const classData = [
         "At the start of each turn, unit's engage meter is filled by 1.",
     },
     weapons: [
-      { name: 'knife', rank: 'B' },
-      { name: 'tome', rank: 'S' },
+      { name: 'Knife', rank: 'B' },
+      { name: 'Tome', rank: 'S' },
     ],
     type: 'Dragon',
     weakness: 'Dragon',
@@ -70,8 +70,8 @@ const classData = [
 
   {
     name: 'Noble(Alfred)',
-    skill: 'none',
-    weapons: [{ name: 'lance', rank: 'B' }],
+    skill: null,
+    weapons: [{ name: 'Lance', rank: 'B' }],
     type: 'Cavalry',
     weakness: 'Mounted',
     growths: {
@@ -94,8 +94,8 @@ const classData = [
         'During combat, may prevent 50% of physical damage taken. Trigger %=Dex.',
     },
     weapons: [
-      { name: 'sword', rank: 'B' },
-      { name: 'lance', rank: 'A' },
+      { name: 'Sword', rank: 'B' },
+      { name: 'Lance', rank: 'A' },
     ],
     type: 'Cavalry',
     weakness: 'Mounted',
@@ -113,10 +113,10 @@ const classData = [
   },
   {
     name: 'Noble(Céline)',
-    skill: 'none',
+    skill: null,
     weapons: [
-      { name: 'sword', rank: 'B' },
-      { name: 'tome', rank: 'B' },
+      { name: 'Sword', rank: 'B' },
+      { name: 'Tome', rank: 'B' },
     ],
     type: 'mystical',
     growths: {
@@ -139,9 +139,9 @@ const classData = [
         'During Combat, may add half of Str to magic damage or half of Mag to all other damage. Trigger 5=Dex.',
     },
     weapons: [
-      { name: 'sword', rank: 'B' },
-      { name: 'tome', rank: 'A' },
-      { name: 'staff', rank: 'B' },
+      { name: 'Sword', rank: 'B' },
+      { name: 'Tome', rank: 'A' },
+      { name: 'Staff', rank: 'B' },
     ],
     type: 'mystical',
     growths: {
@@ -158,8 +158,8 @@ const classData = [
   },
   {
     name: 'Lord(Diamant)',
-    skill: 'none',
-    weapons: [{ name: 'sword', rank: 'B' }],
+    skill: null,
+    weapons: [{ name: 'Sword', rank: 'B' }],
     type: 'Backup',
     growths: {
       hp: 15,
@@ -180,8 +180,8 @@ const classData = [
       description: 'Unit may recover HP=50% damage dealt. Trigger %=Dex.',
     },
     weapons: [
-      { name: 'sword', rank: 'S' },
-      { name: 'axe', rank: 'A' },
+      { name: 'Sword', rank: 'S' },
+      { name: 'Axe', rank: 'A' },
     ],
     type: 'Backup',
     growths: {
@@ -198,8 +198,8 @@ const classData = [
   },
   {
     name: 'Lord(Alcryst)',
-    skill: 'none',
-    weapons: [{ name: 'bow', rank: 'B' }],
+    skill: null,
+    weapons: [{ name: 'Bow', rank: 'B' }],
     type: 'Covert',
     growths: {
       hp: 10,
@@ -220,7 +220,7 @@ const classData = [
       description:
         "While making an attack, may ignore half of foe's Def/Res. Trigger %=Dex.",
     },
-    weapons: [{ name: 'bow', rank: 'S' }],
+    weapons: [{ name: 'Bow', rank: 'S' }],
     type: 'Covert',
     growths: {
       hp: 10,
@@ -236,10 +236,10 @@ const classData = [
   },
   {
     name: 'Wing Tamer(Ivy)',
-    skill: 'none',
+    skill: null,
     weapons: [
-      { name: 'tome', rank: 'B' },
-      { name: 'staff', rank: 'B' },
+      { name: 'Tome', rank: 'B' },
+      { name: 'Staff', rank: 'B' },
     ],
     type: 'Flying',
     weakness: 'Flier',
@@ -260,11 +260,11 @@ const classData = [
     skill: {
       name: 'Grasping Void',
       description:
-        "When attacking with a tome, unit may deal extra damage = half of foe's Mag. Trigger %=Dex.",
+        "When attacking with a Tome, unit may deal extra damage = half of foe's Mag. Trigger %=Dex.",
     },
     weapons: [
-      { name: 'tome', rank: 'S' },
-      { name: 'staff', rank: 'B' },
+      { name: 'Tome', rank: 'S' },
+      { name: 'Staff', rank: 'B' },
     ],
     type: 'Flying',
     weakness: 'Flier',
@@ -282,10 +282,10 @@ const classData = [
   },
   {
     name: 'Wing Tamer(Hortensia)',
-    skill: 'none',
+    skill: null,
     weapons: [
-      { name: 'tome', rank: 'B' },
-      { name: 'staff', rank: 'B' },
+      { name: 'Tome', rank: 'B' },
+      { name: 'Staff', rank: 'B' },
     ],
     type: 'Flying',
     weakness: 'Flier',
@@ -306,11 +306,11 @@ const classData = [
     skill: {
       name: 'World Tree',
       description:
-        'When unit uses a staff, may not consume a use. Trigger %=Dex.',
+        'When unit uses a Staff, may not consume a use. Trigger %=Dex.',
     },
     weapons: [
-      { name: 'tome', rank: 'B' },
-      { name: 'staff', rank: 'S' },
+      { name: 'Tome', rank: 'B' },
+      { name: 'Staff', rank: 'S' },
     ],
     type: 'Flying',
     weakness: 'Flier',
@@ -328,8 +328,8 @@ const classData = [
   },
   {
     name: 'Sentinel(Timerra)',
-    skill: 'none',
-    weapons: [{ name: 'lance', rank: 'B' }],
+    skill: null,
+    weapons: [{ name: 'Lance', rank: 'B' }],
     type: 'Backup',
     growths: {
       hp: 10,
@@ -350,7 +350,7 @@ const classData = [
       description:
         'While making a physical attack, may calculate damage with 150% of Def instead of Str. Trigger %=Dex.',
     },
-    weapons: [{ name: 'lance', rank: 'S' }],
+    weapons: [{ name: 'Lance', rank: 'S' }],
     type: 'Backup',
     growths: {
       hp: 10,
@@ -366,8 +366,8 @@ const classData = [
   },
   {
     name: 'Sentinel(Fogado)',
-    skill: 'none',
-    weapons: [{ name: 'bow', rank: 'B' }],
+    skill: null,
+    weapons: [{ name: 'Bow', rank: 'B' }],
     type: 'Cavalry',
     weakness: 'Mounted',
     growths: {
@@ -390,7 +390,7 @@ const classData = [
         'When countering, unit may deal extra damage = half of damage taken. Trigger% = Dex.',
     },
     weapons: [
-      { name: 'sword', rank: 'B' },
+      { name: 'Sword', rank: 'B' },
       { name: 'Bow', rank: 'A' },
     ],
     type: 'Cavalry',
@@ -409,8 +409,8 @@ const classData = [
   },
   {
     name: 'Sword Fighter',
-    skill: 'none',
-    weapons: [{ name: 'sword', rank: 'B' }],
+    skill: null,
+    weapons: [{ name: 'Sword', rank: 'B' }],
     type: 'Backup',
     growths: {
       hp: 10,
@@ -431,7 +431,7 @@ const classData = [
       description:
         'Use to attack an adjacent foe, then move to the space opposite that foe.',
     },
-    weapons: [{ name: 'sword', rank: 'S' }],
+    weapons: [{ name: 'Sword', rank: 'S' }],
     type: 'Backup',
     growths: {
       hp: 10,
@@ -453,8 +453,8 @@ const classData = [
         "If unit's HP is at max while unit make a chain attack, unit attacks twice.",
     },
     weapons: [
-      { name: 'sword', rank: 'A' },
-      { name: 'lance or axe', rank: 'C^' },
+      { name: 'Sword', rank: 'A' },
+      { name: 'Lance or Axe', rank: 'C^' },
     ],
     type: 'Backup',
     growths: {
@@ -471,8 +471,8 @@ const classData = [
   },
   {
     name: 'Lance Fighter',
-    skill: 'none',
-    weapons: [{ name: 'lance', rank: 'B' }],
+    skill: null,
+    weapons: [{ name: 'Lance', rank: 'B' }],
     type: 'Backup',
     growths: {
       hp: 10,
@@ -493,7 +493,7 @@ const classData = [
       description:
         'If unit initiates combat while an ally is on the opposite side of the foe, always follow up (if weapon allows).',
     },
-    weapons: [{ name: 'lance', rank: 'S' }],
+    weapons: [{ name: 'Lance', rank: 'S' }],
     type: 'Backup',
     growths: {
       hp: 10,
@@ -515,8 +515,8 @@ const classData = [
         "If unit's HP is 11 or more and an adjacent ally is broken after combat, sacrifices 10 HP and removes the break status from that ally.",
     },
     weapons: [
-      { name: 'lance', rank: 'A' },
-      { name: 'staff', rank: 'C^' },
+      { name: 'Lance', rank: 'A' },
+      { name: 'Staff', rank: 'C^' },
     ],
     type: 'Cavalry',
     weakness: 'Mounted',
@@ -534,8 +534,8 @@ const classData = [
   },
   {
     name: 'Axe Fighter',
-    skill: 'none',
-    weapons: [{ name: 'axe', rank: 'B' }],
+    skill: null,
+    weapons: [{ name: 'Axe', rank: 'B' }],
     type: 'Backup',
     growths: {
       hp: 25,
@@ -556,7 +556,7 @@ const classData = [
       description:
         'When making a smash attack, push the target 2 spaces instead of 1.',
     },
-    weapons: [{ name: 'axe', rank: 'S' }],
+    weapons: [{ name: 'Axe', rank: 'S' }],
     type: 'Backup',
     growths: {
       hp: 30,
@@ -577,8 +577,8 @@ const classData = [
       description: 'Unit deals +50% damage against broken foes.',
     },
     weapons: [
-      { name: 'axe', rank: 'A' },
-      { name: 'bow', rank: 'C^' },
+      { name: 'Axe', rank: 'A' },
+      { name: 'Bow', rank: 'C^' },
     ],
     type: 'Backup',
     growths: {
@@ -595,8 +595,8 @@ const classData = [
   },
   {
     name: 'Archer',
-    skill: 'none',
-    weapons: [{ name: 'bow', rank: 'B' }],
+    skill: null,
+    weapons: [{ name: 'Bow', rank: 'B' }],
     type: 'Covert',
     growths: {
       hp: 10,
@@ -617,7 +617,7 @@ const classData = [
       description:
         "Grants Crit+10 during combat with a foe that can't counter.",
     },
-    weapons: [{ name: 'bow', rank: 'S' }],
+    weapons: [{ name: 'Bow', rank: 'S' }],
     type: 'Covert',
     growths: {
       hp: 15,
@@ -639,7 +639,7 @@ const classData = [
         'If unit initiates combat without moving first, grants Hit+40 during combat.',
     },
     weapons: [
-      { name: 'sword, lance, or axe', rank: 'C^' },
+      { name: 'Sword, Lance, or Axe', rank: 'C^' },
       { name: 'Bow', rank: 'A' },
     ],
     type: 'Cavalry',
@@ -658,8 +658,8 @@ const classData = [
   },
   {
     name: 'Sword Armor',
-    skill: 'none',
-    weapons: [{ name: 'sword', rank: 'B' }],
+    skill: null,
+    weapons: [{ name: 'Sword', rank: 'B' }],
     type: 'Armor',
     growths: {
       hp: 20,
@@ -675,8 +675,8 @@ const classData = [
   },
   {
     name: 'Lance Armor',
-    skill: 'none',
-    weapons: [{ name: 'lance', rank: 'B' }],
+    skill: null,
+    weapons: [{ name: 'Lance', rank: 'B' }],
     type: 'Armor',
     growths: {
       hp: 20,
@@ -692,8 +692,8 @@ const classData = [
   },
   {
     name: 'Axe Armor',
-    skill: 'none',
-    weapons: [{ name: 'axe', rank: 'B' }],
+    skill: null,
+    weapons: [{ name: 'Axe', rank: 'B' }],
     type: 'Armor',
     growths: {
       hp: 20,
@@ -713,7 +713,7 @@ const classData = [
       name: 'Swap',
       description: 'Use to switch places with an adjacent ally.',
     },
-    weapons: [{ name: 'sword, lance, or axe', rank: 'A^' }],
+    weapons: [{ name: 'Sword, Lance, or Axe', rank: 'A^' }],
     type: 'Armor',
     growths: {
       hp: 25,
@@ -735,8 +735,8 @@ const classData = [
         'If unit is between an ally and a foe, reduces damage to unit by 3 during combat with that foe.',
     },
     weapons: [
-      { name: 'sword, lance or axe', rank: 'B^' },
-      { name: 'sword, lance, or axe', rank: 'B^' },
+      { name: 'Sword, Lance or Axe', rank: 'B^' },
+      { name: 'Remainder of Sword, Lance, or Axe', rank: 'B^' },
     ],
     type: 'Cavalry',
     weakness: ['Mounted', 'Armored'],
@@ -754,8 +754,8 @@ const classData = [
   },
   {
     name: 'Sword Cavalier',
-    skill: 'none',
-    weapons: [{ name: 'sword', rank: 'B' }],
+    skill: null,
+    weapons: [{ name: 'Sword', rank: 'B' }],
     type: 'Cavalry',
     weakness: 'Mounted',
     growths: {
@@ -772,8 +772,8 @@ const classData = [
   },
   {
     name: 'Lance Cavalier',
-    skill: 'none',
-    weapons: [{ name: 'lance', rank: 'B' }],
+    skill: null,
+    weapons: [{ name: 'Lance', rank: 'B' }],
     type: 'Cavalry',
     weakness: 'Mounted',
     growths: {
@@ -790,8 +790,8 @@ const classData = [
   },
   {
     name: 'Axe Cavalier',
-    skill: 'none',
-    weapons: [{ name: 'axe', rank: 'B' }],
+    skill: null,
+    weapons: [{ name: 'Axe', rank: 'B' }],
     type: 'Cavalry',
     weakness: 'Mounted',
     growths: {
@@ -812,7 +812,7 @@ const classData = [
       name: 'Pivot',
       description: 'Use to move to the opposite side of an adjacent ally.',
     },
-    weapons: [{ name: 'sword, lance, or axe', rank: 'A^' }],
+    weapons: [{ name: 'Sword, Lance, or Axe', rank: 'A^' }],
     type: 'Cavalry',
     weakness: 'Mounted',
     growths: {
@@ -832,11 +832,11 @@ const classData = [
     skill: {
       name: 'Hobble',
       description:
-        'If unit initiates combat with a knife, inflicts Mov-2 on foe for 1 turn.',
+        'If unit initiates combat with a Knife, inflicts Mov-2 on foe for 1 turn.',
     },
     weapons: [
-      { name: 'sword, lance, or axe', rank: 'B^' },
-      { name: 'knife', rank: 'A^' },
+      { name: 'Sword, Lance, or Axe', rank: 'B^' },
+      { name: 'Knife', rank: 'A^' },
     ],
     type: 'Cavalry',
     weakness: 'Mounted',
@@ -854,8 +854,8 @@ const classData = [
   },
   {
     name: 'Mage',
-    skill: 'none',
-    weapons: [{ name: 'tome', rank: 'B' }],
+    skill: null,
+    weapons: [{ name: 'Tome', rank: 'B' }],
     type: 'mystical',
     growths: {
       hp: 0,
@@ -874,11 +874,11 @@ const classData = [
     skill: {
       name: 'Spell Harmony',
       description:
-        'If unit initiates combat with a tome, grants Atk equal to the number of adjacent allies with tomes.',
+        'If unit initiates combat with a Tome, grants Atk equal to the number of adjacent allies with Tomes.',
     },
     weapons: [
-      { name: 'tome', rank: 'S' },
-      { name: 'staff', rank: 'B^' },
+      { name: 'Tome', rank: 'S' },
+      { name: 'Staff', rank: 'B^' },
     ],
     type: 'mystical',
     growths: {
@@ -901,8 +901,8 @@ const classData = [
         'If unit initiates combat with a physical attack against a foe armed with magic or vice versa, grants Spd+3 during combat.',
     },
     weapons: [
-      { name: 'sword, lance, or axe', rank: 'B^' },
-      { name: 'tome', rank: 'A' },
+      { name: 'Sword, Lance, or Axe', rank: 'B^' },
+      { name: 'Tome', rank: 'A' },
     ],
     type: 'Cavalry',
     weakness: 'Mounted',
@@ -920,10 +920,10 @@ const classData = [
   },
   {
     name: 'Martial Monk',
-    skill: 'none',
+    skill: null,
     weapons: [
-      { name: 'staff', rank: 'B' },
-      { name: 'arts', rank: 'C' },
+      { name: 'Staff', rank: 'B' },
+      { name: 'Arts', rank: 'C' },
     ],
     type: 'Qi Adept',
     growths: {
@@ -943,11 +943,11 @@ const classData = [
     skill: {
       name: 'Diffuse Healer',
       description:
-        'When unit is healed by a staff, all adjacent allies also recover 50% of the HP that the unit recovered.',
+        'When unit is healed by a Staff, all adjacent allies also recover 50% of the HP that the unit recovered.',
     },
     weapons: [
-      { name: 'staff', rank: 'A' },
-      { name: 'arts', rank: 'S' },
+      { name: 'Staff', rank: 'A' },
+      { name: 'Arts', rank: 'S' },
     ],
     type: 'Qi Adept',
     growths: {
@@ -969,9 +969,9 @@ const classData = [
       description: 'Unit can target itself with healing staves.',
     },
     weapons: [
-      { name: 'tome', rank: 'B' },
-      { name: 'staff', rank: 'S' },
-      { name: 'arts', rank: 'C^' },
+      { name: 'Tome', rank: 'B' },
+      { name: 'Staff', rank: 'S' },
+      { name: 'Arts', rank: 'C^' },
     ],
     type: 'mystical',
     growths: {
@@ -988,8 +988,8 @@ const classData = [
   },
   {
     name: 'Sword Flier',
-    skill: 'none',
-    weapons: [{ name: 'sword', rank: 'B' }],
+    skill: null,
+    weapons: [{ name: 'Sword', rank: 'B' }],
     type: 'Flying',
     weakness: 'Flier',
     growths: {
@@ -1006,8 +1006,8 @@ const classData = [
   },
   {
     name: 'Lance Flier',
-    skill: 'none',
-    weapons: [{ name: 'lance', rank: 'B' }],
+    skill: null,
+    weapons: [{ name: 'Lance', rank: 'B' }],
     type: 'Flying',
     weakness: 'Flier',
     growths: {
@@ -1024,8 +1024,8 @@ const classData = [
   },
   {
     name: 'Axe Flier',
-    skill: 'none',
-    weapons: [{ name: 'axe', rank: 'B' }],
+    skill: null,
+    weapons: [{ name: 'Axe', rank: 'B' }],
     type: 'Flying',
     weakness: 'Flier',
     growths: {
@@ -1048,8 +1048,8 @@ const classData = [
         "Unit's space and adjacent spaces have a movement cost of 1 for allies.",
     },
     weapons: [
-      { name: 'sword, lance, or axe', rank: 'A^' },
-      { name: 'staff', rank: 'C^' },
+      { name: 'Sword, Lance, or Axe', rank: 'A^' },
+      { name: 'Staff', rank: 'C^' },
     ],
     type: 'Flying',
     weakness: 'Flier',
@@ -1073,8 +1073,8 @@ const classData = [
         'If unit initiates combat from a space a foe cannot enter, grants Spd+5 during combat',
     },
     weapons: [
-      { name: 'sword, lance, or axe', rank: 'B^' },
-      { name: 'sword, lance, or axe', rank: 'B^' },
+      { name: 'Sword, Lance, or Axe', rank: 'B^' },
+      { name: 'Remainder of Sword, Lance, or Axe', rank: 'B^' },
     ],
     type: 'Flying',
     weakness: 'Flier',
@@ -1096,7 +1096,7 @@ const classData = [
       name: 'Pass',
       description: "Foes do not block this unit's movement.",
     },
-    weapons: [{ name: 'knife', rank: 'S' }],
+    weapons: [{ name: 'Knife', rank: 'S' }],
     type: 'Covert',
     growths: {
       hp: 5,
@@ -1117,7 +1117,7 @@ const classData = [
       description:
         'If unit uses Dance, grants Dex/Spd/Lck+3 to target for 1 turn.',
     },
-    weapons: [{ name: 'arts', rank: 'A' }],
+    weapons: [{ name: 'Arts', rank: 'A' }],
     type: 'Qi Adept',
     growths: {
       hp: 5,
@@ -1132,3 +1132,5 @@ const classData = [
     },
   },
 ];
+
+export default classData;

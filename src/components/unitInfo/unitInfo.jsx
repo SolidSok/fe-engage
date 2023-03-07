@@ -7,7 +7,7 @@ export default function UnitInfo() {
   return (
     <div>
       <h1>Units</h1>
-      <div className="unit-page">
+      <div className="page">
         {unit.map(unit => (
           <UnitCard unit={unit} key={unit.name} />
         ))}

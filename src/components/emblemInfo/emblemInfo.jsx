@@ -8,7 +8,7 @@ export default function EmblemInfo() {
   return (
     <div>
       <h1>Emblems</h1>
-      <div className="emblem-page">
+      <div className="page">
         {emblem.map(emblem => (
           <EmblemCard emblem={emblem} key={emblem.name} />
         ))}
