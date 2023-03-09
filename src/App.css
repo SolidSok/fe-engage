@@ -56,3 +56,17 @@
   /* height: 200px; */
   object-fit: contain;
 }
+
+.image-select {
+  height: 50px;
+  width: 50px;
+  background-color: darkgray;
+  border-radius: 50%;
+  object-fit: contain;
+  cursor: pointer;
+  padding: 2px;
+  margin: 2px;
+}
+.image-select:hover {
+  border: 1px solid yellow;
+}

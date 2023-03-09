@@ -9,8 +9,8 @@ import Misc from './components/misc/misc';
 import UnitInfo from './components/unitInfo/unitInfo';
 function App() {
   return (
-    <EmblemInfo />
-    // <UnitInfo />
+    // <EmblemInfo />
+    <UnitInfo />
     // <ClassInfo />
     // <BrowserRouter className="app">
     //   <Routes>
