@@ -1,38 +1,61 @@
-import React, { useEffect, useState } from 'react';
-
+import React, { useState } from 'react';
 import UnitCard from './unitCard';
 import unitData from './unitData';
+import classData from '../classInfo/classData';
+import emblemData from '../emblemInfo/emblemData';
+import Accordion from 'react-bootstrap/Accordion';
+import { Col, Container, Row } from 'react-bootstrap';
+
 export default function UnitInfo() {
   const unit = unitData;
+  const classes = classData;
+  const emblems = emblemData;
   const [selectedUnit, setSelectedUnit] = useState(unit[0]);
 
   return (
-    <div>
-      <h1>Units</h1>
-      {/* <div className="page">
-        {unit.map(unit => (
-          <UnitCard unit={unit} key={unit.name} />
-        ))}
-      </div> */}
-      <div className="unit-select top-left">
-        {unit.map(unit => {
-          return (
-            <img
-              key={unit.name}
-              className="image-select"
-              src={unit.image}
-              alt={unit.name}
-              onClick={unit => setSelectedUnit(unit.indexOf(unit))}
-            />
-          );
-        })}
-      </div>
-      <div className="unit-card top-right">
+    <Container className="page">
+      <Row>
         {' '}
-        <UnitCard unit={selectedUnit} />
-      </div>
-      <div className="class-select middle-left"></div>
-      <div className="emblem-select bottom-left"></div>
-    </div>
+        <h1>Units</h1>
+      </Row>
+      <Row>
+        <Col className="unit-select left">
+          {unit.map(e => {
+            return (
+              <img
+                key={e.name}
+                className="image-select"
+                src={e.image}
+                alt={e.name}
+                onClick={() => setSelectedUnit(e)}
+              />
+            );
+          })}
+          <Accordion>
+            <Accordion.Item eventKey="0">
+              <Accordion.Header>
+                {' '}
+                <div className="class-select">classes</div>
+              </Accordion.Header>
+              <Accordion.Body>
+                alsjdalkjflkjasdflkjasdfjklasfjl ajsldaslkjdlasjd asjdaslkjdal
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="1">
+              <Accordion.Header>
+                {' '}
+                <div className="emblem-select">emblem selection</div>
+              </Accordion.Header>
+
+              <Accordion.Body></Accordion.Body>
+            </Accordion.Item>
+          </Accordion>
+        </Col>
+        <Col className="unit-card right">
+          {' '}
+          <UnitCard unit={selectedUnit} />
+        </Col>
+      </Row>
+    </Container>
   );
 }
