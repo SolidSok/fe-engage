@@ -60,8 +60,8 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
-  justify-content: space-evenly;
-  width: 720px;
+  justify-content: center;
+  width: 800px;
 }
 
 .card-image,
@@ -94,4 +94,9 @@ h1 {
 .image-select:hover {
   /* background-color: rgb(147, 206, 107); */
   border-color: #646cff;
+}
+
+.accordion-list {
+  width: 370px;
+  background-color: #242424;
 }

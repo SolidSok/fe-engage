@@ -19,41 +19,88 @@ export default function UnitInfo() {
         <h1>Units</h1>
       </Row>
       <Row>
-        <Col className="unit-select left">
-          {unit.map(e => {
-            return (
-              <img
-                key={e.name}
-                className="image-select"
-                src={e.image}
-                alt={e.name}
-                onClick={() => setSelectedUnit(e)}
-              />
-            );
-          })}
-          <Accordion>
+        <Col xs={12} md={6} className="unit-select left">
+          <Accordion className="accordion-list">
             <Accordion.Item eventKey="0">
-              <Accordion.Header>
-                {' '}
-                <div className="class-select">classes</div>
-              </Accordion.Header>
+              <Accordion.Header>Units</Accordion.Header>
               <Accordion.Body>
-                alsjdalkjflkjasdflkjasdfjklasfjl ajsldaslkjdlasjd asjdaslkjdal
+                {' '}
+                {unit.map(e => {
+                  return (
+                    <img
+                      key={e.name}
+                      className="image-select"
+                      src={e.image}
+                      alt={e.name}
+                      onClick={() => setSelectedUnit(e)}
+                    />
+                  );
+                })}
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="1">
               <Accordion.Header>
                 {' '}
+                <div className="class-select">classes</div>
+              </Accordion.Header>
+              <Accordion.Body>
+                <Accordion>
+                  <Accordion.Item eventKey="0">
+                    <Accordion.Header>Unique Classes</Accordion.Header>
+                    <Accordion.Body>info</Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item eventKey="1">
+                    <Accordion.Header>Backups</Accordion.Header>
+                    <Accordion.Body>info</Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item eventKey="2">
+                    <Accordion.Header>Mystic</Accordion.Header>
+                    <Accordion.Body>info</Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item eventKey="3">
+                    <Accordion.Header>Cavalry</Accordion.Header>
+                    <Accordion.Body>info</Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item eventKey="4">
+                    <Accordion.Header>Flying</Accordion.Header>
+                    <Accordion.Body>info</Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item eventKey="5">
+                    <Accordion.Header>Armor</Accordion.Header>
+                    <Accordion.Body>info</Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item eventKey="6">
+                    <Accordion.Header>Covert</Accordion.Header>
+                    <Accordion.Body>info</Accordion.Body>
+                  </Accordion.Item>
+                </Accordion>
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="2">
+              <Accordion.Header>
+                {' '}
                 <div className="emblem-select">emblem selection</div>
               </Accordion.Header>
 
-              <Accordion.Body></Accordion.Body>
+              <Accordion.Body>
+                {emblems.map(e => {
+                  return (
+                    <img
+                      key={e.name}
+                      className="image-select"
+                      src={e.image}
+                      alt={e.name}
+                    />
+                  );
+                })}
+              </Accordion.Body>
             </Accordion.Item>
           </Accordion>
         </Col>
-        <Col className="unit-card right">
+        <Col xs={12} md={6} className="unit-card right">
           {' '}
           <UnitCard unit={selectedUnit} />
+          <div></div>
         </Col>
       </Row>
     </Container>
