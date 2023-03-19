@@ -47,31 +47,94 @@ export default function UnitInfo() {
                 <Accordion>
                   <Accordion.Item eventKey="0">
                     <Accordion.Header>Unique Classes</Accordion.Header>
-                    <Accordion.Body>info</Accordion.Body>
+                    <Accordion.Body>
+                      {classes.find(e => e.unique === selectedUnit.name) ? (
+                        classes
+                          .filter(e => e.unique === selectedUnit.name)
+                          .map(e => {
+                            return <div>{e.name}</div>;
+                          })
+                      ) : (
+                        <div>This unit has no unique classes</div>
+                      )}
+                    </Accordion.Body>
                   </Accordion.Item>
                   <Accordion.Item eventKey="1">
                     <Accordion.Header>Backups</Accordion.Header>
-                    <Accordion.Body>info</Accordion.Body>
+                    <Accordion.Body>
+                      {classes
+                        .filter(e => {
+                          return e.type == 'Backup' && e.unique === undefined;
+                        })
+                        .map(e => {
+                          return <div>{e.name}</div>;
+                        })}
+                    </Accordion.Body>
                   </Accordion.Item>
                   <Accordion.Item eventKey="2">
                     <Accordion.Header>Mystic</Accordion.Header>
-                    <Accordion.Body>info</Accordion.Body>
+                    <Accordion.Body>
+                      {' '}
+                      {classes
+                        .filter(e => {
+                          return e.type == 'Mystical' && e.unique === undefined;
+                        })
+                        .map(e => {
+                          return <div>{e.name}</div>;
+                        })}
+                    </Accordion.Body>
                   </Accordion.Item>
                   <Accordion.Item eventKey="3">
                     <Accordion.Header>Cavalry</Accordion.Header>
-                    <Accordion.Body>info</Accordion.Body>
+                    <Accordion.Body>
+                      {' '}
+                      {classes
+                        .filter(e => {
+                          return e.type == 'Cavalry' && e.unique === undefined;
+                        })
+                        .map(e => {
+                          return <div>{e.name}</div>;
+                        })}
+                    </Accordion.Body>
                   </Accordion.Item>
                   <Accordion.Item eventKey="4">
                     <Accordion.Header>Flying</Accordion.Header>
-                    <Accordion.Body>info</Accordion.Body>
+                    <Accordion.Body>
+                      {' '}
+                      {classes
+                        .filter(e => {
+                          return e.type == 'Flying' && e.unique === undefined;
+                        })
+                        .map(e => {
+                          return <div>{e.name}</div>;
+                        })}
+                    </Accordion.Body>
                   </Accordion.Item>
                   <Accordion.Item eventKey="5">
                     <Accordion.Header>Armor</Accordion.Header>
-                    <Accordion.Body>info</Accordion.Body>
+                    <Accordion.Body>
+                      {' '}
+                      {classes
+                        .filter(e => {
+                          return e.type == 'Armor' && e.unique === undefined;
+                        })
+                        .map(e => {
+                          return <div>{e.name}</div>;
+                        })}
+                    </Accordion.Body>
                   </Accordion.Item>
                   <Accordion.Item eventKey="6">
                     <Accordion.Header>Covert</Accordion.Header>
-                    <Accordion.Body>info</Accordion.Body>
+                    <Accordion.Body>
+                      {' '}
+                      {classes
+                        .filter(e => {
+                          return e.type == 'Covert' && e.unique === undefined;
+                        })
+                        .map(e => {
+                          return <div>{e.name}</div>;
+                        })}
+                    </Accordion.Body>
                   </Accordion.Item>
                 </Accordion>
               </Accordion.Body>
@@ -100,7 +163,7 @@ export default function UnitInfo() {
         <Col xs={12} md={6} className="unit-card right">
           {' '}
           <UnitCard unit={selectedUnit} />
-          <div></div>
+          <div>stats</div>
         </Col>
       </Row>
     </Container>

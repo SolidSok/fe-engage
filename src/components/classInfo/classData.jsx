@@ -4,6 +4,7 @@ const classData = [
     skill: null,
     weapons: [{ name: 'Sword', rank: 'B' }],
     type: 'Dragon',
+    unique: 'Alear',
     weakness: 'Dragon',
     growths: {
       hp: 10,
@@ -28,6 +29,8 @@ const classData = [
       { name: 'Arts', rank: 'B' },
     ],
     type: 'Dragon',
+    unique: 'Alear',
+
     weakness: 'Dragon',
     growths: {
       hp: 10,
@@ -53,6 +56,8 @@ const classData = [
       { name: 'Tome', rank: 'S' },
     ],
     type: 'Dragon',
+    unique: 'Veyle',
+
     weakness: 'Dragon',
     growths: {
       hp: 10,
@@ -73,6 +78,8 @@ const classData = [
     skill: null,
     weapons: [{ name: 'Lance', rank: 'B' }],
     type: 'Cavalry',
+    unique: 'Alfred',
+
     weakness: 'Mounted',
     growths: {
       hp: 15,
@@ -98,6 +105,8 @@ const classData = [
       { name: 'Lance', rank: 'A' },
     ],
     type: 'Cavalry',
+    unique: 'Alfred',
+
     weakness: 'Mounted',
     growths: {
       hp: 15,
@@ -118,7 +127,9 @@ const classData = [
       { name: 'Sword', rank: 'B' },
       { name: 'Tome', rank: 'B' },
     ],
-    type: 'mystical',
+    type: 'Mystical',
+    unique: 'Céline',
+
     growths: {
       hp: 0,
       str: 5,
@@ -143,7 +154,9 @@ const classData = [
       { name: 'Tome', rank: 'A' },
       { name: 'Staff', rank: 'B' },
     ],
-    type: 'mystical',
+    type: 'Mystical',
+    unique: 'Céline',
+
     growths: {
       hp: 5,
       str: 10,
@@ -157,10 +170,12 @@ const classData = [
     },
   },
   {
-    name: 'Lord(Diamant)',
+    name: 'Lord (Diamant)',
     skill: null,
     weapons: [{ name: 'Sword', rank: 'B' }],
     type: 'Backup',
+    unique: 'Diamant',
+
     growths: {
       hp: 15,
       str: 20,
@@ -184,6 +199,8 @@ const classData = [
       { name: 'Axe', rank: 'A' },
     ],
     type: 'Backup',
+    unique: 'Diamant',
+
     growths: {
       hp: 15,
       str: 20,
@@ -197,10 +214,12 @@ const classData = [
     },
   },
   {
-    name: 'Lord(Alcryst)',
+    name: 'Lord (Alcryst)',
     skill: null,
     weapons: [{ name: 'Bow', rank: 'B' }],
     type: 'Covert',
+    unique: 'Alcryst',
+
     growths: {
       hp: 10,
       str: 10,
@@ -222,6 +241,8 @@ const classData = [
     },
     weapons: [{ name: 'Bow', rank: 'S' }],
     type: 'Covert',
+    unique: 'Alcryst',
+
     growths: {
       hp: 10,
       str: 10,
@@ -235,13 +256,15 @@ const classData = [
     },
   },
   {
-    name: 'Wing Tamer(Ivy)',
+    name: 'Wing Tamer (Ivy)',
     skill: null,
     weapons: [
       { name: 'Tome', rank: 'B' },
       { name: 'Staff', rank: 'B' },
     ],
     type: 'Flying',
+    unique: 'Ivy',
+
     weakness: 'Flier',
     growths: {
       hp: 5,
@@ -267,6 +290,8 @@ const classData = [
       { name: 'Staff', rank: 'B' },
     ],
     type: 'Flying',
+    unique: 'Ivy',
+
     weakness: 'Flier',
     growths: {
       hp: 5,
@@ -281,13 +306,15 @@ const classData = [
     },
   },
   {
-    name: 'Wing Tamer(Hortensia)',
+    name: 'Wing Tamer (Hortensia)',
     skill: null,
     weapons: [
       { name: 'Tome', rank: 'B' },
       { name: 'Staff', rank: 'B' },
     ],
     type: 'Flying',
+    unique: 'Hortensia',
+
     weakness: 'Flier',
     growths: {
       hp: 0,
@@ -313,6 +340,8 @@ const classData = [
       { name: 'Staff', rank: 'S' },
     ],
     type: 'Flying',
+    unique: 'Hortensia',
+
     weakness: 'Flier',
     growths: {
       hp: 0,
@@ -327,10 +356,12 @@ const classData = [
     },
   },
   {
-    name: 'Sentinel(Timerra)',
+    name: 'Sentinel (Timerra)',
     skill: null,
     weapons: [{ name: 'Lance', rank: 'B' }],
     type: 'Backup',
+    unique: 'Timerra',
+
     growths: {
       hp: 10,
       str: 10,
@@ -352,6 +383,8 @@ const classData = [
     },
     weapons: [{ name: 'Lance', rank: 'S' }],
     type: 'Backup',
+    unique: 'Timerra',
+
     growths: {
       hp: 10,
       str: 15,
@@ -365,10 +398,12 @@ const classData = [
     },
   },
   {
-    name: 'Sentinel(Fogado)',
+    name: 'Sentinel (Fogado)',
     skill: null,
     weapons: [{ name: 'Bow', rank: 'B' }],
     type: 'Cavalry',
+    unique: 'Fogado',
+
     weakness: 'Mounted',
     growths: {
       hp: 10,
@@ -394,6 +429,8 @@ const classData = [
       { name: 'Bow', rank: 'A' },
     ],
     type: 'Cavalry',
+    unique: 'Fogado',
+
     weakness: 'Mounted',
     growths: {
       hp: 10,
@@ -856,7 +893,7 @@ const classData = [
     name: 'Mage',
     skill: null,
     weapons: [{ name: 'Tome', rank: 'B' }],
-    type: 'mystical',
+    type: 'Mystical',
     growths: {
       hp: 0,
       str: 0,
@@ -880,7 +917,7 @@ const classData = [
       { name: 'Tome', rank: 'S' },
       { name: 'Staff', rank: 'B^' },
     ],
-    type: 'mystical',
+    type: 'Mystical',
     growths: {
       hp: 0,
       str: 0,
@@ -973,7 +1010,7 @@ const classData = [
       { name: 'Staff', rank: 'S' },
       { name: 'Arts', rank: 'C^' },
     ],
-    type: 'mystical',
+    type: 'Mystical',
     growths: {
       hp: 0,
       str: 0,
