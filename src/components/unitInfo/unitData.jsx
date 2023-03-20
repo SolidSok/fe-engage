@@ -101,7 +101,7 @@ const unitData = [
   {
     name: 'Alfred',
     image: 'src/assets/units/alfred.png',
-    class: 'Noble',
+    class: 'Noble (Alfred)',
     innate: 'Lance',
     sp: 300,
     personal: {
@@ -176,7 +176,7 @@ const unitData = [
   {
     name: 'Céline',
     image: 'src/assets/units/celine.png',
-    class: 'Noble',
+    class: 'Noble (Céline)',
     innate: 'Tome',
     sp: 300,
     personal: {
@@ -276,7 +276,7 @@ const unitData = [
   {
     name: 'Alcryst',
     image: 'src/assets/units/alcryst.png',
-    class: 'Lord',
+    class: 'Lord (Alcryst)',
     innate: 'Bow',
     sp: 500,
     personal: {
@@ -351,7 +351,7 @@ const unitData = [
   {
     name: 'Diamant',
     image: 'src/assets/units/diamant.png',
-    class: 'Lord',
+    class: 'Lord (Diamant)',
     innate: 'Sword',
     sp: 800,
     personal: {
@@ -426,7 +426,7 @@ const unitData = [
   {
     name: 'Ivy',
     image: 'src/assets/units/ivy.png',
-    class: 'Wing Tamer',
+    class: 'Wing Tamer (Ivy)',
     innate: 'Tome',
     sp: 1000,
     personal: {
@@ -501,7 +501,7 @@ const unitData = [
   {
     name: 'Fogado',
     image: 'src/assets/units/fogado.png',
-    class: 'Sentinel',
+    class: 'Sentinel (Fogado)',
     innate: 'Bow',
     sp: 1200,
     personal: {
@@ -576,7 +576,7 @@ const unitData = [
   {
     name: 'Timerra',
     image: 'src/assets/units/timerra.png',
-    class: 'Sentinel',
+    class: 'Sentinel (Timerra)',
     innate: 'Lance',
     sp: 1500,
     personal: {
@@ -650,7 +650,7 @@ const unitData = [
   {
     name: 'Hortensia',
     image: 'src/assets/units/hortensia.png',
-    class: 'Wing Tamer',
+    class: 'Wing Tamer (Hortensia)',
     innate: 'Staff',
     sp: 1500,
     personal: {

@@ -74,7 +74,7 @@ const classData = [
   },
 
   {
-    name: 'Noble(Alfred)',
+    name: 'Noble (Alfred)',
     skill: null,
     weapons: [{ name: 'Lance', rank: 'B' }],
     type: 'Cavalry',

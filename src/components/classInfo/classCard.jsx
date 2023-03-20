@@ -1,30 +1,36 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
+import Table from 'react-bootstrap/Table';
 
-export default function ClassCard({ classes }) {
+export default function ClassCard({ selectedClass }) {
   return (
     <Card className="card">
-      <Card.Title>{classes.name}</Card.Title>
-      {classes.skill !== null ? (
-        <Card.Text>Skill: {classes.skill.name}</Card.Text>
+      <h3>Class Data</h3>
+
+      {selectedClass.skill !== null ? (
+        <Card.Text>Skill: {selectedClass.skill.name}</Card.Text>
       ) : null}
+
+      <Card.Text>Type: {selectedClass.type}</Card.Text>
+
+      <p> Information for: {selectedClass.name}</p>
+
       {/* <Card.Text>
         Weapons:{' '}
-        {classes.weapons.map(weapon => (
+        {selectedClass.weapons.map(weapon => (
           <React.Fragment key={weapon.name}>
             <br />
             {weapon.name} ({weapon.rank})
           </React.Fragment>
         ))}
       </Card.Text> */}
-      <Card.Text>Type: {classes.type}</Card.Text>
 
       {
-        //figure out classes.weakness.map is not a function error
-        /* {classes.weakness ? (
+        //figure out selectedClass.weakness.map is not a function error
+        /* {selectedClass.weakness ? (
         <Card.Text>
           weakness:{' '}
-          {classes.weakness.map(weakness => {
+          {selectedClass.weakness.map(weakness => {
             <React.Fragment key={weakness}>{weakness}</React.Fragment>;
           })}
         </Card.Text>

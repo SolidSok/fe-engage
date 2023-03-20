@@ -4,7 +4,7 @@ import { Button } from 'react-bootstrap';
 
 export default function UnitCard({ unit }) {
   return (
-    <Card className="card">
+    <Card className="card unit-card">
       <Card.Img className="card-image" variant="top" src={unit.image} />
 
       <Card.Title as="h2">
