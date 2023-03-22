@@ -10,7 +10,7 @@ export default function UnitSelect({
   setSelectedClass,
 }) {
   return (
-    <Col xs={12} md={6} className="unit-select left">
+    <Col xs={12} md={4} className="unit-select left">
       <Accordion className="accordion-list">
         <Accordion.Item eventKey="0">
           <Accordion.Header>Units</Accordion.Header>

@@ -1,5 +1,5 @@
 #root {
-  max-width: 1080px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -47,24 +47,22 @@ h1 {
   line-height: 1.1;
 }
 
+.page {
+  background-color: #b1a4a415;
+  padding: 30px;
+}
+
 .card {
   padding: 2em;
   margin: auto;
-  width: 300px;
-  border: 1px solid white;
+  width: 260px;
   justify-content: center;
   background-color: #242424;
 }
 .unit-card {
-  height: 720px;
-}
-.page {
-  display: flex;
-  flex-wrap: wrap;
-  margin: auto;
-  padding: 5px;
-  justify-content: center;
-  width: 800px;
+  height: 500px;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 .card-image,
@@ -75,7 +73,7 @@ h1 {
 }
 .card-image {
   height: 200px;
-  background-color: #1a1a1a;
+  background-color: #fffefe5b;
   border-radius: 50%;
 }
 .image-select {
@@ -93,13 +91,13 @@ h1 {
 .select {
   cursor: pointer;
 }
-.class-select,
-.emblem-select,
-.stat-box {
-  border: 1px solid white;
+.select:hover {
+  color: #646cff;
 }
+
 .stat-box {
   margin: 10px;
+  width: 400px;
 }
 .image-select:hover {
   /* background-color: rgb(147, 206, 107); */
@@ -108,5 +106,10 @@ h1 {
 
 .accordion-list {
   width: 370px;
+}
+.unit-select-header {
   background-color: #242424;
+}
+.stat-box {
+  border: 1px solid rgba(230, 224, 224, 0.336);
 }

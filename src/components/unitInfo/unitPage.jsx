@@ -6,6 +6,8 @@ import emblemData from '../emblemInfo/emblemData';
 import { Col, Container, Row } from 'react-bootstrap';
 import UnitSelect from './unitSelect';
 import StatBox from './statBox';
+import ClassCard from '../classInfo/classCard';
+import EmblemCard from '../emblemInfo/emblemCard';
 
 export default function UnitInfo() {
   const units = unitData;
@@ -24,31 +26,46 @@ export default function UnitInfo() {
   return (
     <Container className="page">
       <Row>
-        {' '}
-        <h1>Units</h1>
-      </Row>
-      <Row>
-        <UnitSelect
-          unit={units}
-          classes={classes}
-          emblems={emblems}
-          selectedUnit={selectedUnit}
-          setSelectedUnit={setSelectedUnit}
-          setSelectedEmblem={setSelectedEmblem}
-          setSelectedClass={setSelectedClass}
-        />
-        <Col xs={12} md={6} className="unit-card right">
-          {' '}
-          <UnitCard unit={selectedUnit} />
+        <Col xs={12} md={12}>
+          <h1>Unit Builder</h1>
         </Col>
       </Row>
       <Row>
-        <StatBox
-          selectedUnit={selectedUnit}
-          selectedClass={selectedClass}
-          selectedEmblem={selectedEmblem}
-        />
+        <Col xs={12} md={6} lg={4}>
+          <UnitCard unit={selectedUnit} />
+        </Col>
+        <Col xs={12} md={6} lg={4}>
+          {' '}
+          <ClassCard selectedClass={selectedClass} />
+        </Col>
+        <Col xs={12} md={6} lg={4}>
+          {' '}
+          <EmblemCard emblem={selectedEmblem} />
+        </Col>
       </Row>
+      <Row>
+        <Col xs={12} md={6}>
+          {' '}
+          <UnitSelect
+            unit={units}
+            classes={classes}
+            emblems={emblems}
+            selectedUnit={selectedUnit}
+            setSelectedUnit={setSelectedUnit}
+            setSelectedEmblem={setSelectedEmblem}
+            setSelectedClass={setSelectedClass}
+          />
+        </Col>
+        <Col xs={12} md={6} className="unit-card right">
+          {' '}
+          <StatBox
+            selectedUnit={selectedUnit}
+            selectedClass={selectedClass}
+            selectedEmblem={selectedEmblem}
+          />
+        </Col>
+      </Row>
+      <Row></Row>
     </Container>
   );
 }

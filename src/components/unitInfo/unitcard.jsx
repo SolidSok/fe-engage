@@ -16,7 +16,6 @@ export default function UnitCard({ unit }) {
 
       <Card.Text>Innate Skill: {unit.innate}</Card.Text>
       <Card.Text>Personal Skill: {unit.personal.name}</Card.Text>
-      <Button>More info...</Button>
     </Card>
   );
 }
