@@ -1,7 +1,7 @@
 const unitData = [
   {
     name: 'Alear',
-    image: 'src/assets/units/alearF.png',
+    image: '/assets/units/alearF.png',
     class: 'Dragon Child',
     innate: 'Sword',
     sp: 300,
@@ -25,7 +25,7 @@ const unitData = [
   },
   {
     name: 'Vander',
-    image: 'src/assets/units/vander.png',
+    image: '/assets/units/vander.png',
     class: 'Paladin',
     innate: 'Axe',
     sp: 300,
@@ -50,7 +50,7 @@ const unitData = [
   },
   {
     name: 'Clanne',
-    image: 'src/assets/units/clanne.png',
+    image: '/assets/units/clanne.png',
     class: 'Mage',
     innate: 'Tome',
     sp: 300,
@@ -75,7 +75,7 @@ const unitData = [
   },
   {
     name: 'Framme',
-    image: 'src/assets/units/framme.png',
+    image: '/assets/units/framme.png',
     class: 'Martial Monk',
     innate: 'Arts',
     sp: 300,
@@ -100,7 +100,7 @@ const unitData = [
   },
   {
     name: 'Alfred',
-    image: 'src/assets/units/alfred.png',
+    image: '/assets/units/alfred.png',
     class: 'Noble (Alfred)',
     innate: 'Lance',
     sp: 300,
@@ -125,7 +125,7 @@ const unitData = [
   },
   {
     name: 'Etie',
-    image: 'src/assets/units/etie.png',
+    image: '/assets/units/etie.png',
     class: 'Archer',
     innate: 'Bow',
     sp: 300,
@@ -150,7 +150,7 @@ const unitData = [
   },
   {
     name: 'Boucheron',
-    image: 'src/assets/units/boucheron.png',
+    image: '/assets/units/boucheron.png',
     class: 'Axe Fighter',
     innate: 'Axe',
     sp: 300,
@@ -175,7 +175,7 @@ const unitData = [
   },
   {
     name: 'Céline',
-    image: 'src/assets/units/celine.png',
+    image: '/assets/units/celine.png',
     class: 'Noble (Céline)',
     innate: 'Tome',
     sp: 300,
@@ -200,7 +200,7 @@ const unitData = [
   },
   {
     name: 'Chloé',
-    image: 'src/assets/units/chloe.png',
+    image: '/assets/units/chloe.png',
     class: 'Lance Flier',
     innate: 'Lance',
     sp: 300,
@@ -225,7 +225,7 @@ const unitData = [
   },
   {
     name: 'Louis',
-    image: 'src/assets/units/louis.png',
+    image: '/assets/units/louis.png',
     class: 'Lance Armor',
     innate: 'Lance',
     sp: 300,
@@ -250,7 +250,7 @@ const unitData = [
   },
   {
     name: 'Yunaka',
-    image: 'src/assets/units/yunaka.png',
+    image: '/assets/units/yunaka.png',
     class: 'Thief',
     innate: 'Knife',
     sp: 500,
@@ -275,7 +275,7 @@ const unitData = [
   },
   {
     name: 'Alcryst',
-    image: 'src/assets/units/alcryst.png',
+    image: '/assets/units/alcryst.png',
     class: 'Lord (Alcryst)',
     innate: 'Bow',
     sp: 500,
@@ -300,7 +300,7 @@ const unitData = [
   },
   {
     name: 'Citrinne',
-    image: 'src/assets/units/citrinne.png',
+    image: '/assets/units/citrinne.png',
     class: 'Mage',
     innate: 'Tome',
     sp: 500,
@@ -325,7 +325,7 @@ const unitData = [
   },
   {
     name: 'Lapis',
-    image: 'src/assets/units/lapis.png',
+    image: '/assets/units/lapis.png',
     class: 'Sword Fighter',
     innate: 'Sword',
     sp: 500,
@@ -350,7 +350,7 @@ const unitData = [
   },
   {
     name: 'Diamant',
-    image: 'src/assets/units/diamant.png',
+    image: '/assets/units/diamant.png',
     class: 'Lord (Diamant)',
     innate: 'Sword',
     sp: 800,
@@ -375,7 +375,7 @@ const unitData = [
   },
   {
     name: 'Amber',
-    image: 'src/assets/units/amber.png',
+    image: '/assets/units/amber.png',
     class: 'Lance Cavalier',
     innate: 'Lance',
     sp: 800,
@@ -400,7 +400,7 @@ const unitData = [
   },
   {
     name: 'Jade',
-    image: 'src/assets/units/jade.png',
+    image: '/assets/units/jade.png',
     class: 'Axe Armor',
     innate: 'Axe',
     sp: 800,
@@ -425,7 +425,7 @@ const unitData = [
   },
   {
     name: 'Ivy',
-    image: 'src/assets/units/ivy.png',
+    image: '/assets/units/ivy.png',
     class: 'Wing Tamer (Ivy)',
     innate: 'Tome',
     sp: 1000,
@@ -450,7 +450,7 @@ const unitData = [
   },
   {
     name: 'Kagetsu',
-    image: 'src/assets/units/kagetsu.png',
+    image: '/assets/units/kagetsu.png',
     class: 'Swordmaster',
     innate: 'Sword',
     sp: 1000,
@@ -475,7 +475,7 @@ const unitData = [
   },
   {
     name: 'Zelkov',
-    image: 'src/assets/units/zelkov.png',
+    image: '/assets/units/zelkov.png',
     class: 'Thief',
     innate: 'Knife',
     sp: 1000,
@@ -500,7 +500,7 @@ const unitData = [
   },
   {
     name: 'Fogado',
-    image: 'src/assets/units/fogado.png',
+    image: '/assets/units/fogado.png',
     class: 'Sentinel (Fogado)',
     innate: 'Bow',
     sp: 1200,
@@ -525,7 +525,7 @@ const unitData = [
   },
   {
     name: 'Pandreo',
-    image: 'src/assets/units/pandreo.png',
+    image: '/assets/units/pandreo.png',
     class: 'High Priest',
     innate: 'Staff',
     sp: 1200,
@@ -550,7 +550,7 @@ const unitData = [
   },
   {
     name: 'Bunet',
-    image: 'src/assets/units/bunet.png',
+    image: '/assets/units/bunet.png',
     class: 'Great Knight',
     innate: 'Sword',
     sp: 1200,
@@ -575,7 +575,7 @@ const unitData = [
   },
   {
     name: 'Timerra',
-    image: 'src/assets/units/timerra.png',
+    image: '/assets/units/timerra.png',
     class: 'Sentinel (Timerra)',
     innate: 'Lance',
     sp: 1500,
@@ -599,7 +599,7 @@ const unitData = [
   },
   {
     name: 'Panette',
-    image: 'src/assets/units/panette.png',
+    image: '/assets/units/panette.png',
     class: 'Berserker',
     innate: 'Knife',
     sp: 1500,
@@ -624,7 +624,7 @@ const unitData = [
   },
   {
     name: 'Merrin',
-    image: 'src/assets/units/merrin.png',
+    image: '/assets/units/merrin.png',
     class: 'Wolf Knight',
     innate: 'Knife',
     sp: 1500,
@@ -649,7 +649,7 @@ const unitData = [
   },
   {
     name: 'Hortensia',
-    image: 'src/assets/units/hortensia.png',
+    image: '/assets/units/hortensia.png',
     class: 'Wing Tamer (Hortensia)',
     innate: 'Staff',
     sp: 1500,
@@ -673,7 +673,7 @@ const unitData = [
   },
   {
     name: 'Seadall',
-    image: 'src/assets/units/seadall.png',
+    image: '/assets/units/seadall.png',
     class: 'Dancer',
     innate: 'Arts',
     sp: 1500,
@@ -698,7 +698,7 @@ const unitData = [
   },
   {
     name: 'Rosado',
-    image: 'src/assets/units/rosado.png',
+    image: '/assets/units/rosado.png',
     class: 'Wyvern Knight',
     innate: 'Axe',
     sp: 1800,
@@ -722,7 +722,7 @@ const unitData = [
   },
   {
     name: 'Goldmary',
-    image: 'src/assets/units/goldmary.png',
+    image: '/assets/units/goldmary.png',
     class: 'Hero',
     innate: 'Lance',
     sp: 1800,
@@ -746,7 +746,7 @@ const unitData = [
   },
   {
     name: 'Lindon',
-    image: 'src/assets/units/lindon.png',
+    image: '/assets/units/lindon.png',
     class: 'Sage',
     innate: 'Staff',
     sp: 2000,
@@ -771,7 +771,7 @@ const unitData = [
   },
   {
     name: 'Saphir',
-    image: 'src/assets/units/saphir.png',
+    image: '/assets/units/saphir.png',
     class: 'Warrior',
     innate: 'Axe',
     sp: 2000,
@@ -796,7 +796,7 @@ const unitData = [
   },
   {
     name: 'Veyle',
-    image: 'src/assets/units/veyle.png',
+    image: '/assets/units/veyle.png',
     class: 'Fell Dragon',
     innate: 'Tome',
     sp: 2500,
@@ -821,7 +821,7 @@ const unitData = [
   },
   {
     name: 'Mauvier',
-    image: 'src/assets/units/mauvier.png',
+    image: '/assets/units/mauvier.png',
     class: 'Royal Knight',
     innate: 'Staff',
     sp: 2500,
@@ -847,7 +847,7 @@ const unitData = [
   },
   {
     name: 'Anna',
-    image: 'src/assets/units/anna.png',
+    image: '/assets/units/anna.png',
     class: 'Axe Fighter',
     innate: 'Arts',
     sp: 300,
@@ -872,7 +872,7 @@ const unitData = [
   },
   {
     name: 'Jean',
-    image: 'src/assets/units/jean.png',
+    image: '/assets/units/jean.png',
     class: 'Martial Monk',
     innate: 'Bow',
     sp: 300,
