@@ -1,6 +1,6 @@
 import React from 'react';
-import { Card } from 'react-bootstrap';
-import Table from 'react-bootstrap/Table';
+import { Button, Card } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 export default function ClassCard({ selectedClass }) {
   return (
@@ -20,6 +20,9 @@ export default function ClassCard({ selectedClass }) {
           </React.Fragment>
         ))}
       </Card.Text>
+      <Link to="/classes">
+        <Button>Learn more....</Button>{' '}
+      </Link>
 
       {
         //figure out selectedClass.weakness.map is not a function error

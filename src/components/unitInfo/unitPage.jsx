@@ -9,7 +9,7 @@ import StatBox from './statBox';
 import ClassCard from '../classInfo/classCard';
 import EmblemCard from '../emblemInfo/emblemCard';
 
-export default function UnitInfo() {
+export default function UnitPage() {
   const units = unitData;
   const classes = classData;
   const emblems = emblemData;
