@@ -121,7 +121,7 @@ const classData = [
     },
   },
   {
-    name: 'Noble(Céline)',
+    name: 'Noble (Céline)',
     skill: null,
     weapons: [
       { name: 'Sword', rank: 'B' },

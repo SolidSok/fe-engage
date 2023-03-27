@@ -797,7 +797,7 @@ const unitData = [
   {
     name: 'Veyle',
     image: '/assets/units/veyle.png',
-    class: 'Fell Dragon',
+    class: 'Fell Child',
     innate: 'Tome',
     sp: 2500,
     personal: {
