@@ -1,6 +1,6 @@
 import React from 'react';
 import Table from 'react-bootstrap/Table';
-
+import { Image } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 import unitData from './unitData';
 export default function UnitView() {
@@ -8,6 +8,7 @@ export default function UnitView() {
   const unit = unitData.find(u => u.name === name);
   return (
     <div>
+      <Image className="card-image" src={unit.image} />
       <h2> {unit.name}</h2>
       <p>{unit.class}</p>
       <p>{unit.innate}</p>
