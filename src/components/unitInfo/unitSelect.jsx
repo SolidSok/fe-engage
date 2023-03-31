@@ -30,10 +30,7 @@ export default function UnitSelect({
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="1">
-          <Accordion.Header>
-            {' '}
-            <div className="class-select">classes</div>
-          </Accordion.Header>
+          <Accordion.Header>Classes</Accordion.Header>
           <Accordion.Body>
             <Accordion>
               <Accordion.Item eventKey="0">
@@ -46,11 +43,9 @@ export default function UnitSelect({
                         .filter(e => e.unique === selectedUnit.name)
                         .map(e => {
                           return (
-                            <Col>
-                              {' '}
+                            <Col key={e.name}>
                               <span
                                 className="select"
-                                key={e.name}
                                 onClick={() => setSelectedClass(e)}>
                                 {e.name}
                               </span>
@@ -74,8 +69,7 @@ export default function UnitSelect({
                       })
                       .map(e => {
                         return (
-                          <Col xs={6}>
-                            {' '}
+                          <Col key={e.name} xs={6}>
                             <span
                               key={e.name}
                               className="select"
@@ -99,10 +93,8 @@ export default function UnitSelect({
                       })
                       .map(e => {
                         return (
-                          <Col xs={6}>
-                            {' '}
+                          <Col key={e.name} xs={6}>
                             <span
-                              key={e.name}
                               className="select"
                               onClick={() => setSelectedClass(e)}>
                               {e.name}
@@ -117,17 +109,15 @@ export default function UnitSelect({
                 <Accordion.Header>Cavalry</Accordion.Header>
                 <Accordion.Body>
                   <Row>
-                    {' '}
                     {classes
                       .filter(e => {
                         return e.type == 'Cavalry' && e.unique === undefined;
                       })
                       .map(e => {
                         return (
-                          <Col xs={6}>
+                          <Col key={e.name} xs={6}>
                             {' '}
                             <span
-                              key={e.name}
                               className="select"
                               onClick={() => setSelectedClass(e)}>
                               {e.name}
@@ -142,17 +132,14 @@ export default function UnitSelect({
                 <Accordion.Header>Flying</Accordion.Header>
                 <Accordion.Body>
                   <Row>
-                    {' '}
                     {classes
                       .filter(e => {
                         return e.type == 'Flying' && e.unique === undefined;
                       })
                       .map(e => {
                         return (
-                          <Col xs={6}>
-                            {' '}
+                          <Col key={e.name} xs={6}>
                             <span
-                              key={e.name}
                               className="select"
                               onClick={() => setSelectedClass(e)}>
                               {e.name}
@@ -174,10 +161,9 @@ export default function UnitSelect({
                       })
                       .map(e => {
                         return (
-                          <Col xs={6}>
+                          <Col key={e.name} xs={6}>
                             {' '}
                             <span
-                              key={e.name}
                               className="select"
                               onClick={() => setSelectedClass(e)}>
                               {e.name}
@@ -199,13 +185,11 @@ export default function UnitSelect({
                       })
                       .map(e => {
                         return (
-                          <Col xs={6}>
-                            {' '}
+                          <Col key={e.name} xs={6}>
                             <span
-                              key={e.name}
                               className="select"
                               onClick={() => setSelectedClass(e)}>
-                              {e.name}{' '}
+                              {e.name}
                             </span>
                           </Col>
                         );
@@ -217,10 +201,7 @@ export default function UnitSelect({
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="2">
-          <Accordion.Header>
-            {' '}
-            <div className="emblem-select">emblem selection</div>
-          </Accordion.Header>
+          <Accordion.Header>Emblems</Accordion.Header>
 
           <Accordion.Body>
             {emblems.map(e => {

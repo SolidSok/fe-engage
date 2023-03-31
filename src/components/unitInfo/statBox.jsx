@@ -34,19 +34,19 @@ export default function StatBox({
           <td>{selectedUnit.growths.mag}</td>
           <td>{selectedClass.growths.mag}</td>
           <td>{selectedUnit.growths.mag + selectedClass.growths.mag}</td>
-        </tr>{' '}
+        </tr>
         <tr>
           <td>DEX</td>
           <td>{selectedUnit.growths.dex}</td>
           <td>{selectedClass.growths.dex}</td>
           <td>{selectedUnit.growths.dex + selectedClass.growths.dex}</td>
-        </tr>{' '}
+        </tr>
         <tr>
           <td>SPD</td>
           <td>{selectedUnit.growths.spd}</td>
           <td>{selectedClass.growths.spd}</td>
           <td>{selectedUnit.growths.spd + selectedClass.growths.spd}</td>
-        </tr>{' '}
+        </tr>
         <tr>
           <td>DEF</td>
           <td>{selectedUnit.growths.def}</td>

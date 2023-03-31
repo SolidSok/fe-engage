@@ -44,7 +44,7 @@ export default function UnitPage() {
         </Col>
       </Row>
       <Row>
-        <Col xs={12} md={6}>
+        <Col xs={12} md={8} lg={6}>
           {' '}
           <UnitSelect
             unit={units}
@@ -56,7 +56,7 @@ export default function UnitPage() {
             setSelectedClass={setSelectedClass}
           />
         </Col>
-        <Col xs={12} md={6} className="unit-card right">
+        <Col xs={12} md={8} lg={6} className="unit-card right">
           {' '}
           <StatBox
             selectedUnit={selectedUnit}

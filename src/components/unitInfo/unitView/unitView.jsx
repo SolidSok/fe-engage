@@ -2,19 +2,23 @@ import React from 'react';
 import Table from 'react-bootstrap/Table';
 import { Image } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
-import unitData from './unitData';
+import unitData from '../unitData';
+
+import './unitView.css';
+
 export default function UnitView() {
   const { name } = useParams();
   const unit = unitData.find(u => u.name === name);
   return (
-    <div>
-      <Image className="card-image" src={unit.image} />
+    <div className="unit-view">
+      <Image className="unit-view-image" src={unit.image} />
       <h2> {unit.name}</h2>
       <p>{unit.class}</p>
       <p>{unit.innate}</p>
       <p>{unit.origin}</p>
       <p>
-        {unit.personal.name}: {unit.personal.description}
+        <span className="skill-name">{unit.personal.name}</span>:{' '}
+        {unit.personal.description}
       </p>
       <Table className="stat-box" striped bordered hover variant="dark">
         <thead>
