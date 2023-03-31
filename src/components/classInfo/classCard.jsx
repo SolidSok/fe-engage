@@ -20,9 +20,9 @@ export default function ClassCard({ selectedClass }) {
           </React.Fragment>
         ))}
       </Card.Text>
-      <Link to="/classes">
+      {/* <Link to="/classes">
         <Button>Learn more....</Button>{' '}
-      </Link>
+      </Link> */}
 
       {
         //figure out selectedClass.weakness.map is not a function error

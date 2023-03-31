@@ -16,12 +16,12 @@ export default function UnitPage() {
   const [selectedUnit, setSelectedUnit] = useState(units[0]);
   const [selectedEmblem, setSelectedEmblem] = useState(emblems[0]);
   const [selectedClass, setSelectedClass] = useState(
-    classes.find(e => e.name === selectedUnit.class)
+    classes.find(e => e.name === 'Hero')
   );
 
-  useEffect(() => {
-    setSelectedClass(classes.find(e => e.name === selectedUnit.class));
-  }, [selectedUnit]);
+  // useEffect(() => {
+  //   setSelectedClass(classes.find(e => e.name === selectedUnit.class));
+  // }, [selectedUnit]);
 
   return (
     <Container className="page">

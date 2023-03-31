@@ -15,7 +15,7 @@ function App() {
           <Route index element={<UnitPage />} />
           <Route path="units/:name" element={<UnitView />} />
           <Route path="classes" element={<ClassInfo />} />
-          <Route path="*" element={<EngageNav />} />
+          <Route path="*" element={<UnitPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
