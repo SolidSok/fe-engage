@@ -852,10 +852,9 @@ const unitData = [
     innate: 'Arts',
     sp: 300,
     personal: {
-      name: 'Expertise',
+      name: 'Make a Killing',
       image: '',
-      description:
-        'Grants Unit enhanced stat growth when leveling up. (Doubles class Growths)',
+      description: 'May obtain 500G when unit defeats a foe. trigger%=Lck.',
     },
     origin: 'Firene',
     growths: {
@@ -877,9 +876,10 @@ const unitData = [
     innate: 'Bow',
     sp: 300,
     personal: {
-      name: 'Make a Killing',
+      name: 'Expertise',
       image: '',
-      description: 'May obtain 500G when unit defeats a foe. trigger%=Lck.',
+      description:
+        'Grants Unit enhanced stat growth when leveling up. (Doubles class Growths)',
     },
     origin: 'Firene',
     growths: {

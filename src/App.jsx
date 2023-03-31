@@ -1,32 +1,24 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import unitData from './components/unitInfo/unitData';
 import './App.css';
-import { BrowserRouter } from 'react-router-dom';
-import NavBar from './components/navBar';
-import Welcome from './components/welcome';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ClassInfo from './components/classInfo/classInfo';
-import EmblemInfo from './components/emblemInfo/emblemInfo';
-import WeaponsAndItems from './components/weaponsAndItems/weaponsAndItems';
-import Misc from './components/misc/misc';
-import UnitInfo from './components/unitInfo/unitPage';
+
+import UnitPage from './components/unitInfo/unitPage';
+import UnitView from './components/unitInfo/unitView/unitView';
+import EngageNav from './components/navBar';
 function App() {
   return (
-    // <EmblemInfo />
-    <UnitInfo />
-    // <ClassInfo />
-    // <BrowserRouter className="app">
-    //   <Routes>
-    //     <Route path="/" element={<NavBar />}>
-    //       <Route index element={<Welcome />} />
-    //       <Route path="units" element={<UnitInfo />} />
-    //       <Route path="classes" element={<ClassInfo />} />
-    //       <Route path="emblems" element={<EmblemInfo />} />
-    //       <Route path="weapons&items" element={<WeaponsAndItems />} />
-    //       <Route path="misc" element={<Misc />} />
-    //       <Route path="*" element={<NavBar />} />
-    //     </Route>
-    //   </Routes>
-    // </BrowserRouter>
+    <BrowserRouter className="app">
+      <Routes>
+        <Route path="/" element={<EngageNav />}>
+          <Route index element={<UnitPage />} />
+          <Route path="units/:name" element={<UnitView />} />
+          <Route path="classes" element={<ClassInfo />} />
+          <Route path="*" element={<UnitPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

@@ -9,19 +9,19 @@ import StatBox from './statBox';
 import ClassCard from '../classInfo/classCard';
 import EmblemCard from '../emblemInfo/emblemCard';
 
-export default function UnitInfo() {
+export default function UnitPage() {
   const units = unitData;
   const classes = classData;
   const emblems = emblemData;
   const [selectedUnit, setSelectedUnit] = useState(units[0]);
   const [selectedEmblem, setSelectedEmblem] = useState(emblems[0]);
   const [selectedClass, setSelectedClass] = useState(
-    classes.find(e => e.name === selectedUnit.class)
+    classes.find(e => e.name === 'Hero')
   );
 
-  useEffect(() => {
-    setSelectedClass(classes.find(e => e.name === selectedUnit.class));
-  }, [selectedUnit]);
+  // useEffect(() => {
+  //   setSelectedClass(classes.find(e => e.name === selectedUnit.class));
+  // }, [selectedUnit]);
 
   return (
     <Container className="page">
@@ -44,7 +44,7 @@ export default function UnitInfo() {
         </Col>
       </Row>
       <Row>
-        <Col xs={12} md={6}>
+        <Col xs={12} md={8} lg={6}>
           {' '}
           <UnitSelect
             unit={units}
@@ -56,7 +56,7 @@ export default function UnitInfo() {
             setSelectedClass={setSelectedClass}
           />
         </Col>
-        <Col xs={12} md={6} className="unit-card right">
+        <Col xs={12} md={8} lg={6} className="unit-card right">
           {' '}
           <StatBox
             selectedUnit={selectedUnit}
