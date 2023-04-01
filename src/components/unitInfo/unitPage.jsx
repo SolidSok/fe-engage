@@ -35,17 +35,14 @@ export default function UnitPage() {
           <UnitCard unit={selectedUnit} />
         </Col>
         <Col xs={12} md={6} lg={4}>
-          {' '}
           <ClassCard selectedClass={selectedClass} />
         </Col>
         <Col xs={12} md={6} lg={4}>
-          {' '}
           <EmblemCard emblem={selectedEmblem} />
         </Col>
       </Row>
       <Row>
         <Col xs={12} md={8} lg={6}>
-          {' '}
           <UnitSelect
             unit={units}
             classes={classes}
@@ -57,7 +54,6 @@ export default function UnitPage() {
           />
         </Col>
         <Col xs={12} md={8} lg={6} className="unit-card right">
-          {' '}
           <StatBox
             selectedUnit={selectedUnit}
             selectedClass={selectedClass}

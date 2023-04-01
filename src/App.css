@@ -97,3 +97,6 @@ h1 {
 .stat-box {
   border: 1px solid rgba(230, 224, 224, 0.336);
 }
+.stat-tab {
+  background-color: #ffffff;
+}
