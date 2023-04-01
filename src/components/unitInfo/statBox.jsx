@@ -32,7 +32,10 @@ export default function StatBox({
         <tr>
           <td>HP</td>
           <td>{selectedUnit.growths.hp}</td>
-          <td> {selectedClass.growths.hp}</td>
+          <td>
+            {' '}
+            {selectedClass.growths.hp} {selectedUnit.name === 'Jean' && '* 2'}
+          </td>
           <td>
             {selectedUnit.name === 'Jean'
               ? selectedUnit.growths.hp + jeanClassRates.hp
@@ -42,7 +45,9 @@ export default function StatBox({
         <tr>
           <td>STR</td>
           <td>{selectedUnit.growths.str}</td>
-          <td>{selectedClass.growths.str}</td>
+          <td>
+            {selectedClass.growths.str} {selectedUnit.name === 'Jean' && '* 2'}
+          </td>
           <td>
             {selectedUnit.name === 'Jean'
               ? selectedUnit.growths.str + jeanClassRates.str
@@ -52,7 +57,9 @@ export default function StatBox({
         <tr>
           <td>MAG</td>
           <td>{selectedUnit.growths.mag}</td>
-          <td>{selectedClass.growths.mag}</td>
+          <td>
+            {selectedClass.growths.mag} {selectedUnit.name === 'Jean' && '* 2'}
+          </td>
           <td>
             {selectedUnit.name === 'Jean'
               ? selectedUnit.growths.mag + jeanClassRates.mag
@@ -62,7 +69,9 @@ export default function StatBox({
         <tr>
           <td>DEX</td>
           <td>{selectedUnit.growths.dex}</td>
-          <td>{selectedClass.growths.dex}</td>
+          <td>
+            {selectedClass.growths.dex} {selectedUnit.name === 'Jean' && '* 2'}
+          </td>
           <td>
             {selectedUnit.name === 'Jean'
               ? selectedUnit.growths.dex + jeanClassRates.dex
@@ -72,7 +81,9 @@ export default function StatBox({
         <tr>
           <td>SPD</td>
           <td>{selectedUnit.growths.spd}</td>
-          <td>{selectedClass.growths.spd}</td>
+          <td>
+            {selectedClass.growths.spd} {selectedUnit.name === 'Jean' && '* 2'}
+          </td>
           <td>
             {selectedUnit.name === 'Jean'
               ? selectedUnit.growths.spd + jeanClassRates.spd
@@ -82,7 +93,9 @@ export default function StatBox({
         <tr>
           <td>DEF</td>
           <td>{selectedUnit.growths.def}</td>
-          <td>{selectedClass.growths.def}</td>
+          <td>
+            {selectedClass.growths.def} {selectedUnit.name === 'Jean' && '* 2'}
+          </td>
           <td>
             {selectedUnit.name === 'Jean'
               ? selectedUnit.growths.def + jeanClassRates.def
@@ -92,7 +105,9 @@ export default function StatBox({
         <tr>
           <td>RES</td>
           <td>{selectedUnit.growths.res}</td>
-          <td>{selectedClass.growths.res}</td>
+          <td>
+            {selectedClass.growths.res} {selectedUnit.name === 'Jean' && '* 2'}
+          </td>
           <td>
             {selectedUnit.name === 'Jean'
               ? selectedUnit.growths.res + jeanClassRates.res
@@ -102,7 +117,9 @@ export default function StatBox({
         <tr>
           <td>LCK</td>
           <td>{selectedUnit.growths.lck}</td>
-          <td>{selectedClass.growths.lck}</td>
+          <td>
+            {selectedClass.growths.lck} {selectedUnit.name === 'Jean' && '* 2'}
+          </td>
           <td>
             {selectedUnit.name === 'Jean'
               ? selectedUnit.growths.lck + jeanClassRates.lck
@@ -112,7 +129,9 @@ export default function StatBox({
         <tr>
           <td>BLD</td>
           <td>{selectedUnit.growths.bld}</td>
-          <td>{selectedClass.growths.bld}</td>
+          <td>
+            {selectedClass.growths.bld} {selectedUnit.name === 'Jean' && '* 2'}
+          </td>
           <td>
             {selectedUnit.name === 'Jean'
               ? selectedUnit.growths.bld + jeanClassRates.bld
