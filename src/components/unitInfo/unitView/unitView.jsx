@@ -39,44 +39,54 @@ export default function UnitView() {
               <tr>
                 <th>Stat</th>
                 <th>Personal Growth Rate</th>
+                <th>Stat Limits</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>HP</td>
                 <td>{unit.growths.hp}</td>
+                <td>0</td>
               </tr>
               <tr>
                 <td>STR</td>
                 <td>{unit.growths.str}</td>
+                <td>{unit.maxStats.str}</td>
               </tr>
               <tr>
                 <td>MAG</td>
                 <td>{unit.growths.mag}</td>
+                <td>{unit.maxStats.mag}</td>
               </tr>
               <tr>
                 <td>DEX</td>
                 <td>{unit.growths.dex}</td>
+                <td>{unit.maxStats.dex}</td>
               </tr>
               <tr>
                 <td>SPD</td>
                 <td>{unit.growths.spd}</td>
+                <td>{unit.maxStats.spd}</td>
               </tr>
               <tr>
                 <td>DEF</td>
                 <td>{unit.growths.def}</td>
+                <td>{unit.maxStats.def}</td>
               </tr>
               <tr>
                 <td>RES</td>
                 <td>{unit.growths.res}</td>
+                <td>{unit.maxStats.res}</td>
               </tr>
               <tr>
                 <td>LCK</td>
                 <td>{unit.growths.lck}</td>
+                <td>{unit.maxStats.lck}</td>
               </tr>
               <tr>
                 <td>BLD</td>
                 <td>{unit.growths.bld}</td>
+                <td>0</td>
               </tr>
             </tbody>
           </Table>
