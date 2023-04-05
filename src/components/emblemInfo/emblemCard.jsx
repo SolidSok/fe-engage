@@ -11,11 +11,16 @@ export default function EmblemCard({ emblem }) {
       <Card.Title as="h2">
         <span className="name">{emblem.name}</span>
       </Card.Title>
-      <Card.Subtitle>
-        <span className="subtitle"> Emblem of {emblem.title}</span>
-      </Card.Subtitle>
-      <br />
-      <Card.Text>Stat Boosts: {emblem.stats}</Card.Text>
+      {emblem.name !== 'No Emblem' && (
+        <div>
+          {' '}
+          <Card.Subtitle>
+            <span className="subtitle"> Emblem of {emblem.title}</span>
+          </Card.Subtitle>
+          <br />
+          <Card.Text>Stat Boosts: {emblem.stats}</Card.Text>
+        </div>
+      )}
     </Card>
   );
 }

@@ -158,7 +158,6 @@ export default function StatBox({
           </tbody>
         </Table>
       </Tab>
-
       <Tab eventKey="stats" title="Maximum Stats">
         <Table className="stat-box" striped bordered hover variant="dark">
           <thead>
@@ -167,6 +166,7 @@ export default function StatBox({
               <th>Class Limits</th>
               <th>Unit Boosts</th>
               <th>Emblem Boosts</th>
+              <th>Total</th>
             </tr>
           </thead>
           <tbody>
@@ -175,54 +175,93 @@ export default function StatBox({
               <td>{selectedClass.maxStats.hp}</td>
               <td>0</td>
               <td>{selectedEmblem.maxStats.hp}</td>
+              <td>{selectedClass.maxStats.hp + selectedEmblem.maxStats.hp}</td>
             </tr>
             <tr>
               <td>STR</td>
               <td>{selectedClass.maxStats.str}</td>
               <td>{selectedUnit.maxStats.str}</td>
               <td>{selectedEmblem.maxStats.str}</td>
+              <td>
+                {selectedClass.maxStats.str +
+                  selectedUnit.maxStats.str +
+                  selectedEmblem.maxStats.str}
+              </td>
             </tr>
             <tr>
               <td>MAG</td>
               <td>{selectedClass.maxStats.mag}</td>
               <td>{selectedUnit.maxStats.mag}</td>
               <td>{selectedEmblem.maxStats.mag}</td>
+              <td>
+                {selectedClass.maxStats.mag +
+                  selectedUnit.maxStats.mag +
+                  selectedEmblem.maxStats.mag}
+              </td>
             </tr>
             <tr>
               <td>DEX</td>
               <td>{selectedClass.maxStats.dex}</td>
               <td>{selectedUnit.maxStats.dex}</td>
               <td>{selectedEmblem.maxStats.dex}</td>
+              <td>
+                {selectedClass.maxStats.dex +
+                  selectedUnit.maxStats.dex +
+                  selectedEmblem.maxStats.dex}
+              </td>
             </tr>
             <tr>
               <td>SPD</td>
               <td>{selectedClass.maxStats.spd}</td>
               <td>{selectedUnit.maxStats.spd}</td>
               <td>{selectedEmblem.maxStats.spd}</td>
+              <td>
+                {selectedClass.maxStats.spd +
+                  selectedUnit.maxStats.spd +
+                  selectedEmblem.maxStats.spd}
+              </td>
             </tr>
             <tr>
               <td>DEF</td>
               <td>{selectedClass.maxStats.def}</td>
               <td>{selectedUnit.maxStats.def}</td>
               <td>{selectedEmblem.maxStats.def}</td>
+              <td>
+                {selectedClass.maxStats.def +
+                  selectedUnit.maxStats.def +
+                  selectedEmblem.maxStats.def}
+              </td>
             </tr>
             <tr>
               <td>RES</td>
               <td>{selectedClass.maxStats.res}</td>
               <td>{selectedUnit.maxStats.res}</td>
               <td>{selectedEmblem.maxStats.res}</td>
+              <td>
+                {selectedClass.maxStats.res +
+                  selectedUnit.maxStats.res +
+                  selectedEmblem.maxStats.res}
+              </td>
             </tr>
             <tr>
               <td>LCK</td>
               <td>{selectedClass.maxStats.lck}</td>
               <td>{selectedUnit.maxStats.lck}</td>
               <td>{selectedEmblem.maxStats.lck}</td>
+              <td>
+                {selectedClass.maxStats.lck +
+                  selectedUnit.maxStats.lck +
+                  selectedEmblem.maxStats.lck}
+              </td>
             </tr>
             <tr>
               <td>BLD</td>
               <td>{selectedClass.maxStats.bld}</td>
               <td>0</td>
               <td>{selectedEmblem.maxStats.bld}</td>
+              <td>
+                {selectedClass.maxStats.bld + selectedEmblem.maxStats.bld}
+              </td>
             </tr>
             {selectedEmblem.maxStats.mov === 1 && (
               <tr>
@@ -230,6 +269,7 @@ export default function StatBox({
                 <td></td>
                 <td></td>
                 <td>1</td>
+                <td>+2</td>
               </tr>
             )}
           </tbody>

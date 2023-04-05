@@ -54,6 +54,7 @@ h1 {
   width: 200px;
   /* height: 200px; */
   object-fit: contain;
+  align-self: center;
 }
 .card-image {
   height: 200px;
@@ -96,6 +97,7 @@ h1 {
 }
 .stat-box {
   border: 1px solid rgba(230, 224, 224, 0.336);
+  width: 100%;
 }
 .stat-tab {
   background-color: #ffffff;

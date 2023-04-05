@@ -24,17 +24,9 @@ export default function ClassCard({ selectedClass }) {
         <Button>Learn more....</Button>{' '}
       </Link> */}
 
-      {
-        //figure out selectedClass.weakness.map is not a function error
-        /* {selectedClass.weakness ? (
-        <Card.Text>
-          weakness:{' '}
-          {selectedClass.weakness.map(weakness => {
-            <React.Fragment key={weakness}>{weakness}</React.Fragment>;
-          })}
-        </Card.Text>
-      ) : null} */
-      }
+      {selectedClass.weakness !== undefined ? (
+        <Card.Text>Weakness: {selectedClass.weakness}</Card.Text>
+      ) : null}
     </Card>
   );
 }

@@ -1168,7 +1168,7 @@ const classData = [
       { name: 'Remainder of Sword, Lance, or Axe', rank: 'B^' },
     ],
     type: 'Cavalry',
-    weakness: ['Mounted', 'Armored'],
+    weakness: 'Mounted, Armored',
     growths: {
       hp: 20,
       str: 15,
@@ -1848,7 +1848,7 @@ const classData = [
       { name: 'Tome', rank: 'A' },
     ],
     type: 'Flying',
-    weakness: ['Flier', 'Dragon'],
+    weakness: 'Flier, Dragon',
     growths: {
       hp: 10,
       str: 10,
