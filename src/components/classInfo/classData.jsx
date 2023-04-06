@@ -79,7 +79,6 @@ const classData = [
     ],
     type: 'Dragon',
     unique: 'Veyle',
-
     weakness: 'Dragon',
     growths: {
       hp: 10,
@@ -1802,6 +1801,7 @@ const classData = [
       lck: 42,
       bld: 11,
     },
+    dlc: true,
   },
   {
     name: 'Mage Cannoneer',
@@ -1835,20 +1835,96 @@ const classData = [
       lck: 31,
       bld: 18,
     },
+    dlc: true,
   },
   {
-    name: 'Melusine',
+    name: 'Melusine (Zelestia)',
     skill: {
       name: 'Soulblade',
       description:
         "When atacking with a sword, damage is calculated using average of foe's Def and Res.",
     },
     weapons: [
-      { name: 'Sword', rank: 'S' },
-      { name: 'Tome', rank: 'A' },
+      { name: 'Sword', rank: 'A' },
+      { name: 'Tome', rank: 'S' },
     ],
     type: 'Flying',
+    unique: 'Zelestia',
     weakness: 'Flier, Dragon',
+    growths: {
+      hp: 10,
+      str: 10,
+      mag: 10,
+      dex: 10,
+      spd: 15,
+      def: 10,
+      res: 10,
+      lck: 0,
+      bld: 5,
+    },
+    maxStats: {
+      hp: 73,
+      str: 45,
+      mag: 23,
+      dex: 43,
+      spd: 23,
+      def: 49,
+      res: 24,
+      lck: 31,
+      bld: 18,
+    },
+  },
+  {
+    name: 'Fell Child (Nel)',
+    skill: {
+      name: 'Resist Emblems',
+      description:
+        'When attacked with an engage attack, prevents 20% of damage.',
+    },
+    weapons: [
+      { name: 'Lance', rank: 'A' },
+      { name: 'Dragon Stone', rank: 'S' },
+    ],
+    type: 'Dragon',
+    unique: 'Nel',
+    weakness: 'Fell Dragon',
+    growths: {
+      hp: 10,
+      str: 10,
+      mag: 10,
+      dex: 10,
+      spd: 15,
+      def: 10,
+      res: 10,
+      lck: 0,
+      bld: 5,
+    },
+    maxStats: {
+      hp: 73,
+      str: 45,
+      mag: 23,
+      dex: 43,
+      spd: 23,
+      def: 49,
+      res: 24,
+      lck: 31,
+      bld: 18,
+    },
+  },
+  {
+    name: 'Fell Child (Rafal)',
+    skill: {
+      name: 'Spur Emblems',
+      description:
+        "At start of player phase, fills adjacent allies' engage meters by 1.",
+    },
+    weapons: [
+      { name: 'Axe', rank: 'A' },
+      { name: 'Dragon Stone', rank: 'S' },
+    ],
+    type: 'Dragon',
+    unique: 'Rafal',
+    weakness: 'Fell Dragon',
     growths: {
       hp: 10,
       str: 10,
