@@ -22,7 +22,7 @@ const emblemData = [
         bondRank: [1, 16],
         description:
           'If unit initiates combat, grants Avo+30 (15, 30). Avo increases with high speed(+1Avo for every 4 Spd)',
-        type: 'Sync',
+        sync: true,
         inherit: true,
         sp: '500',
       },
@@ -31,50 +31,82 @@ const emblemData = [
         bondRank: [1, 4, 9, 14, 19],
         description:
           'Grants Avo+30 (10, 15, 20, 25, 30) at a cost of Crit-10 when using a sword.',
-        type: '',
-        sp: '',
+        type: 'Inheritable',
+        sp: [500, 1500, 2500, 3500, 4500],
       },
       {
         name: 'Divine Speed',
         bondRank: 1,
         description:
           'Unit performs an extra attack at 50% damage in combat. [Covert] If extra attack hits, poisons foe. [Dragon] Unit recovers HP equal to damage dealt by extra attack.',
-        type: '',
-        sp: '',
+        type: 'Engage Skill',
+        sp: null,
       },
       {
         name: 'LodeStar Rush',
         bondRank: 1,
-        description: '',
-        type: '',
-        sp: '',
+        description:
+          '	Use to launch 7 consecutive sword attacks at 30% damage. Adjacent foe only. [Dragon] +2 attacks.[Backup] +1 attack. [Mystical] Damage based on Mag.',
+        type: 'Engage Attack',
+        sp: null,
       },
-      { name: 'Rapier', bondRank: '', description: '', type: '', sp: '' },
+      {
+        name: 'Rapier',
+        bondRank: 1,
+        description:
+          'Sword wielded by Emblem Marth. Effective: Cavalry, Armored.',
+        type: 'Engage Weapon',
+        sp: null,
+      },
       {
         name: 'Sword Agility 5',
         bondRank: [2, 6, 8, 13, 17],
         description:
           'Grants Avo+30 (10, 15, 20, 25, 30) at a cost of Crit-10 when using a sword.',
-        type: '',
-        sp: '',
+        type: 'Inheritable',
+        sp: [500, 1000, 2000, 3000, 4000],
       },
       {
         name: 'Break Defenses',
-        bondRank: '',
-        description: '',
-        type: '',
-        sp: '',
+        bondRank: 3,
+        description:
+          "If Unit's attack breaks foe, unit makes an extra attack at 50% damage.",
+        sync: true,
+        type: 'Inheritable',
+        sp: 2000,
       },
       {
         name: 'Unyielding++',
         bondRank: [7, 12, 18],
-        description: '',
-        type: '',
-        sp: '',
+        description:
+          "At start of player phase, if HP is 40% (20, 30, 40) or less, restores 40% (20, 30, 40) of unit's max HP.",
+        sync: true,
+        type: 'Inheritable',
+        sp: [100, 200, 300],
       },
-      { name: 'Sword Prof', bondRank: '', description: '', type: '', sp: '' },
-      { name: 'Mercurius', bondRank: '', description: '', type: '', sp: '' },
-      { name: 'Falchion', bondRank: '', description: '', type: '', sp: '' },
+      {
+        name: 'Sword Prof.',
+        bondRank: 8,
+        description:
+          'proficiency with swords. Required for promotion to certain classes.',
+        type: 'Unlock',
+        sp: null,
+      },
+      {
+        name: 'Mercurius',
+        bondRank: 10,
+        description:
+          "Sacred sword wielded by Emblem Marth. Double's user's earned experience.",
+        type: 'Engage Weapon',
+        sp: null,
+      },
+      {
+        name: 'Falchion',
+        bondRank: 15,
+        description: 'Sacred sword wielded by Emblem Marth. Effective: Dragon',
+        type: 'Engage Weapon',
+        sp: null,
+      },
     ],
   },
   {
@@ -93,7 +125,104 @@ const emblemData = [
       lck: 0,
       bld: 0,
     },
-    skills: [{ name: '', bondRank: '', description: '', type: '', sp: '' }],
+    skills: [
+      {
+        name: 'Magic +5',
+        bondRank: [1, 2, 13, 19],
+        description: 'Grants Mag+2 (2, 3, 4, 5).',
+        type: 'Inheritable',
+        sp: [1000, 3000, 4000, 5000],
+      },
+      {
+        name: 'Holy Stance++',
+        bondRank: [1, 12, 18],
+        description:
+          'If a corrupted attacks unit, deals 50% (10, 30, 50) of damage taken back to foe.',
+        type: 'Inheritable',
+        sync: true,
+        sp: [100, 500, 1000],
+      },
+      {
+        name: 'Echo',
+        bondRank: 1,
+        description:
+          'Use to attack with magic at 50% damage. Use a second time to launch another 50% attack. [Dragon] Range +1. [Mystical] +10% damage.',
+        type: 'Engage Skill',
+        sp: null,
+      },
+      {
+        name: 'Warp Ragnarok',
+        bondRank: 1,
+        description:
+          'Use to warp up to 10 spaces and make a powerful magic attack. [Dragon] Attack range +1. [Cavalry] Warp distance +2. [Flying] Warp distance +5. [Mystical] +20% damage.',
+        type: 'Engage Attack',
+        sp: null,
+      },
+      {
+        name: 'Seraphim',
+        bondRank: 1,
+        description:
+          'Holy tome wielded by Emblem Celica. Effective: Corrupted.',
+        type: 'Engage Weapon',
+        sp: null,
+      },
+      {
+        name: 'Resonance',
+        bondRank: '3',
+        description:
+          'When equipped with a tome, if unit’s HP is 2 or more, unit loses 1 HP at start of combat and deals +2 damage during combat.',
+        type: 'Inheritable',
+        sync: true,
+        sp: 2000,
+      },
+      {
+        name: 'Tome Precision 5',
+        bondRank: [4, 7, 9, 14, 17],
+        description: 'Grants Hit/Avo+15 (3, 5, 7, 10, 15) when using a tome.',
+        type: 'Inheritable',
+        sp: [100, 300, 700, 1000, 2000],
+      },
+      {
+        name: 'Tome Prof.',
+        bondRank: 6,
+        description:
+          '	Proficiency with tomes. Required for promotion to certain classes.',
+        type: 'Unlock',
+        sp: null,
+      },
+      {
+        name: 'Favorite Food',
+        bondRank: 8,
+        description:
+          'When unit eats a packed lunch, its engage meter is maxed out.',
+        type: 'Inheritable',
+        sync: true,
+        sp: '200',
+      },
+      {
+        name: 'Sword Prof.',
+        bondRank: 8,
+        description:
+          'proficiency with swords. Required for promotion to certain classes.',
+        type: 'Unlock',
+        sp: null,
+      },
+      {
+        name: 'Recover',
+        bondRank: 10,
+        description:
+          'A staff imbued with healing magic. Recovers vast amounts of an ally’s HP.',
+        type: 'Engage Weapon',
+        sp: null,
+      },
+      {
+        name: 'Ragnarok',
+        bondRank: 15,
+        description: '	Mighty fire tome wielded by Emblem Celica.',
+        type: 'Engage Weapon',
+        sp: null,
+      },
+    ],
   },
   {
     name: 'Sigurd',
@@ -113,7 +242,94 @@ const emblemData = [
       bld: 3,
       mov: 1,
     },
-    skills: [],
+    skills: [
+      {
+        name: 'Canter+',
+        bondRank: [1, 13],
+        description: 'Unit can move 3 (2, 3) spaces after acting.',
+        type: 'Inheritable',
+        sync: true,
+        sp: [1000, 2000],
+      },
+      {
+        name: 'Hit +30',
+        bondRank: [1, 4, 12, 16, 19],
+        description: 'Grants Hit+30 (10, 15, 20, 25, 30).',
+        type: 'Inheritable',
+        sp: [500, 1000, 1500, 2000, 2500],
+      },
+      {
+        name: 'Gallop',
+        bondRank: 1,
+        description:
+          'Grants Mov+5. [Dragon] Grants another Mov+1. [Cavalry] Grants another Mov+2. [Covert] Unit does not pay extra movement cost on any terrain.',
+        type: 'Engage Skill',
+        sp: null,
+      },
+      {
+        name: 'Override',
+        bondRank: 1,
+        description:
+          'Use to attack and move through a line of adjacent foes. Sword/lance only. [Dragon] +20% damage. [Armored] 10% chance of breaking target. [Mystical] Deals extra damage=25% of Mag. [Qi Adept] 20% chance of breaking target.',
+        type: 'Engage Attack',
+        sp: null,
+      },
+      {
+        name: 'Ridersbane',
+        bondRank: 1,
+        description: 'Lance wielded by Emblem Sigurd. Effective: Cavalry.',
+        type: 'Engage Weapon',
+        sp: null,
+      },
+      {
+        name: 'Lance Power 5',
+        bondRank: [1, 6, 8, 14, 18],
+        description:
+          'Grants Atk+10 (2, 4, 6, 8, 10) at a cost of Avo-10 when using a lance.',
+        type: 'Inheritable',
+        sp: [1000, 2000, 3000, 4000, 5000],
+      },
+      {
+        name: 'Momentum+',
+        bondRank: [3, 17],
+        description:
+          'Grants Atk+1 to first attack during combat for each space unit moved before attacking. (Max +10, unlimited)',
+        type: 'Inheritable',
+        sync: true,
+        sp: [1000, 2000],
+      },
+      {
+        name: 'Lance Prof.',
+        bondRank: 6,
+        description:
+          'Proficiency with lances. Required for promotion to certain classes.',
+        type: 'Unlock',
+        sp: null,
+      },
+      {
+        name: 'Headlong Rush',
+        bondRank: 7,
+        description: 'Grants immunity to freeze.',
+        type: 'Inheritable',
+        sync: true,
+        sp: 200,
+      },
+      {
+        name: 'Brave Lance',
+        bondRank: 10,
+        description:
+          'Lance wielded by Emblem Sigurd. If user initiates combat, attacks twice.',
+        type: 'Engage Weapon',
+        sp: null,
+      },
+      {
+        name: 'Tyrfing',
+        bondRank: 15,
+        description: 'Sword wielded by Emblem Sigurd. Grants Res+5.',
+        type: 'Engage Weapon',
+        sp: null,
+      },
+    ],
   },
   {
     name: 'Leif',
@@ -132,7 +348,32 @@ const emblemData = [
       bld: 5,
       mov: 0,
     },
-    skills: [],
+    skills: [
+      {
+        name: 'Build +5',
+        bondRank: [1, 6, 14],
+        description: 'Grants Bld+5 (3, 4, 5).',
+        type: 'Inheritable',
+        sp: [500, 1000, 2000],
+      },
+      {
+        name: 'Arms Shield++',
+        bondRank: [1, 7, 16],
+        description: '',
+        type: '',
+        sp: 100,
+      },
+      { name: '', bondRank: 1, description: '', type: '', sp: 100 },
+      { name: '', bondRank: 1, description: '', type: '', sp: 100 },
+      { name: '', bondRank: 1, description: '', type: '', sp: 100 },
+      { name: '', bondRank: 1, description: '', type: '', sp: 100 },
+      { name: '', bondRank: 1, description: '', type: '', sp: 100 },
+      { name: '', bondRank: 1, description: '', type: '', sp: 100 },
+      { name: '', bondRank: 1, description: '', type: '', sp: 100 },
+      { name: '', bondRank: 1, description: '', type: '', sp: 100 },
+      { name: '', bondRank: 1, description: '', type: '', sp: 100 },
+      { name: '', bondRank: 1, description: '', type: '', sp: 100 },
+    ],
   },
   {
     name: 'Roy',
