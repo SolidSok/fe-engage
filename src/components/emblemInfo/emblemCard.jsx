@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './emblemCard.css';
 
 export default function EmblemCard({ emblem }) {
@@ -21,6 +22,9 @@ export default function EmblemCard({ emblem }) {
           <Card.Text>Stat Boosts: {emblem.stats}</Card.Text>
         </div>
       )}
+      <Link to={`/emblems/${emblem.name}`}>
+        <Button>Learn more...</Button>
+      </Link>
     </Card>
   );
 }

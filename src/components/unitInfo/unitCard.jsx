@@ -16,7 +16,7 @@ export default function UnitCard({ unit }) {
       <Card.Text>Personal Skill: {unit.personal.name}</Card.Text>
       <Link to={`/units/${unit.name}`}>
         <Button>Learn more...</Button>
-      </Link>{' '}
+      </Link>
     </Card>
   );
 }
