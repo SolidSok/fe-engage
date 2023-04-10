@@ -36,7 +36,7 @@ const emblemData = [
         bondRank: 1,
         description:
           'Unit performs an extra attack at 50% damage in combat. [Covert] If extra attack hits, poisons foe. [Dragon] Unit recovers HP equal to damage dealt by extra attack.',
-        enage: 'skill',
+        engage: 'skill',
         sp: null,
       },
       {
@@ -180,7 +180,7 @@ const emblemData = [
       },
       {
         name: 'Avoid+ 30',
-        bondRank: 1,
+        bondRank: 19,
         description: 'Grants Avo+30.',
 
         sp: 4500,
