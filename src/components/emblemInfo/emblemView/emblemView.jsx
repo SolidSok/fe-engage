@@ -33,7 +33,7 @@ export default function EmblemView() {
           <tbody>
             {emblem.skills.map(skill => {
               return (
-                <tr>
+                <tr key={skill.name}>
                   <td>{skill.bondRank}</td>
                   <td>{skill.name}</td>
                   <td>{skill.description}</td>

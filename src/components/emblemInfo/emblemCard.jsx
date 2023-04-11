@@ -22,6 +22,7 @@ export default function EmblemCard({ emblem }) {
           <Card.Text>Stat Boosts: {emblem.stats}</Card.Text>
         </div>
       )}
+      <br />
       <Link to={`/emblems/${emblem.name}`}>
         <Button>Learn more...</Button>
       </Link>
