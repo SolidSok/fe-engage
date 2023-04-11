@@ -16,7 +16,6 @@ function App() {
         <Route path="/" element={<EngageNav />}>
           <Route index element={<UnitPage />} />
           <Route path="units/:name" element={<UnitView />} />
-          <Route path="classes" element={<ClassInfo />} />
           <Route path="classes/:name" element={<ClassView />} />
           <Route path="emblems/:name" element={<EmblemView />} />
           <Route path="*" element={<UnitPage />} />
