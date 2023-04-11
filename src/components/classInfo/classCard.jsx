@@ -8,7 +8,9 @@ export default function ClassCard({ selectedClass }) {
       <h3>{selectedClass.name}</h3>
 
       {selectedClass.skill !== null ? (
-        <Card.Text>Skill: {selectedClass.skill.name}</Card.Text>
+        <Card.Text>
+          {selectedClass.skill.name}: {selectedClass.skill.description}
+        </Card.Text>
       ) : null}
       <Card.Text>Type: {selectedClass.type}</Card.Text>
       <Card.Text>
@@ -20,13 +22,14 @@ export default function ClassCard({ selectedClass }) {
           </React.Fragment>
         ))}
       </Card.Text>
-      {/* <Link to="/classes">
-        <Button>Learn more....</Button>{' '}
-      </Link> */}
 
       {selectedClass.weakness !== undefined ? (
         <Card.Text>Weakness: {selectedClass.weakness}</Card.Text>
       ) : null}
+
+      {/* <Link to={`/classes/${selectedClass.name}`}>
+        <Button>Learn more....</Button>{' '}
+      </Link> */}
     </Card>
   );
 }
