@@ -1,8 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import unitData from './components/unitInfo/unitData';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import ClassInfo from './components/classInfo/classInfo';
 
 import UnitPage from './components/unitInfo/unitPage';
 import UnitView from './components/unitInfo/unitView/unitView';
