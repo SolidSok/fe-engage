@@ -189,6 +189,28 @@ export default function UnitSelect({
                   </Row>
                 </Accordion.Body>
               </Accordion.Item>
+              <Accordion.Item eventKey="7">
+                <Accordion.Header>Qi Adept</Accordion.Header>
+                <Accordion.Body>
+                  <Row>
+                    {classes
+                      .filter(e => {
+                        return e.type == 'Qi Adept' && e.unique === undefined;
+                      })
+                      .map(e => {
+                        return (
+                          <Col key={e.name} xs={6}>
+                            <span
+                              className="select"
+                              onClick={() => setSelectedClass(e)}>
+                              {e.name}
+                            </span>
+                          </Col>
+                        );
+                      })}
+                  </Row>
+                </Accordion.Body>
+              </Accordion.Item>
             </Accordion>
           </Accordion.Body>
         </Accordion.Item>
