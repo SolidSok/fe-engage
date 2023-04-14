@@ -1,5 +1,5 @@
 import React from 'react';
-import emblemData from '../emblemData';
+import emblemData from '../data/emblemData';
 import Table from 'react-bootstrap/Table';
 import { Col, Container, Image, Row } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';

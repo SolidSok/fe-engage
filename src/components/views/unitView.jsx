@@ -2,7 +2,7 @@ import React from 'react';
 import Table from 'react-bootstrap/Table';
 import { Col, Container, Image, Row } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
-import unitData from '../unitData';
+import unitData from '../data/unitData';
 
 import './unitView.css';
 

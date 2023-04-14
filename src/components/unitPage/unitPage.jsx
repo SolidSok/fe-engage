@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import UnitCard from './unitCard';
-import unitData from './unitData';
-import classData from '../classInfo/classData';
-import emblemData from '../emblemInfo/emblemData';
+import UnitCard from '../cards/unitCard';
+import unitData from '../data/unitData';
+import classData from '../data/classData';
+import emblemData from '../data/emblemData';
 import { Col, Container, Row } from 'react-bootstrap';
 import UnitSelect from './unitSelect';
 import StatBox from './statBox';
-import ClassCard from '../classInfo/classCard';
-import EmblemCard from '../emblemInfo/emblemCard';
+import ClassCard from '../cards/classCard';
+import EmblemCard from '../cards/emblemCard';
 
 export default function UnitPage() {
   const units = unitData;
