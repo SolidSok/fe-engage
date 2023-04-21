@@ -5,6 +5,8 @@ export default function UnitSelect({
   classes,
   emblems,
   selectedUnit,
+  selectedClass,
+  selectedEmblem,
   setSelectedUnit,
   setSelectedEmblem,
   setSelectedClass,
@@ -13,7 +15,7 @@ export default function UnitSelect({
     <Col xs={12} md={4} className="unit-select left">
       <Accordion className="accordion-list">
         <Accordion.Item eventKey="0">
-          <Accordion.Header>Units</Accordion.Header>
+          <Accordion.Header>Units ({selectedUnit.name})</Accordion.Header>
           <Accordion.Body>
             {unit.map(e => {
               return (
@@ -29,7 +31,7 @@ export default function UnitSelect({
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="1">
-          <Accordion.Header>Classes</Accordion.Header>
+          <Accordion.Header>Classes ({selectedClass.name})</Accordion.Header>
           <Accordion.Body>
             <Accordion>
               <Accordion.Item eventKey="0">
@@ -215,7 +217,7 @@ export default function UnitSelect({
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="2">
-          <Accordion.Header>Emblems</Accordion.Header>
+          <Accordion.Header>Emblems ({selectedEmblem.name})</Accordion.Header>
 
           <Accordion.Body>
             {emblems.map(e => {

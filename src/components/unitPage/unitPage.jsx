@@ -48,6 +48,8 @@ export default function UnitPage() {
             classes={classes}
             emblems={emblems}
             selectedUnit={selectedUnit}
+            selectedClass={selectedClass}
+            selectedEmblem={selectedEmblem}
             setSelectedUnit={setSelectedUnit}
             setSelectedEmblem={setSelectedEmblem}
             setSelectedClass={setSelectedClass}

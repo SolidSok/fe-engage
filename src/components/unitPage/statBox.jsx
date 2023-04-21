@@ -27,8 +27,8 @@ export default function StatBox({
           <thead>
             <tr>
               <th>Stat</th>
-              <th>Personal Growth Rate</th>
-              <th>Class Growth Rate</th>
+              <th>Personal Growth Rate ({selectedUnit.name})</th>
+              <th>Class Growth Rate ({selectedClass.name})</th>
               <th>Combined Growth Rate</th>
             </tr>
           </thead>
@@ -163,10 +163,10 @@ export default function StatBox({
           <thead>
             <tr>
               <th>Stats</th>
-              <th>Class Limits</th>
-              <th>Unit Boosts</th>
-              <th>Emblem Boosts</th>
-              <th>Total</th>
+              <th>Class Limits ({selectedClass.name})</th>
+              <th>Unit Boosts ({selectedUnit.name})</th>
+              <th>Emblem Boosts ({selectedEmblem.name})</th>
+              <th>Total Stats</th>
             </tr>
           </thead>
           <tbody>
