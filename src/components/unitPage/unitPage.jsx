@@ -35,10 +35,10 @@ export default function UnitPage() {
           <UnitCard unit={selectedUnit} />
         </Col>
         <Col xs={12} md={6} lg={4}>
-          <ClassCard selectedClass={selectedClass} />
+          <EmblemCard emblem={selectedEmblem} />
         </Col>
         <Col xs={12} md={6} lg={4}>
-          <EmblemCard emblem={selectedEmblem} />
+          <ClassCard selectedClass={selectedClass} />
         </Col>
       </Row>
       <Row>
